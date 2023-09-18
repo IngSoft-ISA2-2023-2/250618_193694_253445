@@ -17,7 +17,7 @@ Este repositorio contiene el proyecto DevOps desarrollado como parte de nuestra 
 
 El proyecto se divide en cinco entregas. Cada una se evaluará en función de su cumplimiento y calidad. Además, se llevarán a cabo retrospectivas después de cada entrega para reflexionar sobre el proceso y realizar mejoras continuas.
 
-## Donde encontrar la infromación
+## Donde encontrar la información
 
 Podra encontrar el infrome de cada entrega en la carpeta Documentación. Donde cada archivo posee el titulo correspondiente a la entrega. 
 
@@ -32,6 +32,13 @@ Drive con archivos: https://drive.google.com/drive/folders/1qN_UFLUm22r_9S9Otx9I
 - Tablero retrometro: https://metroretro.io/BOGNVGHVT5P3
 - Video retrospectiva: https://fi365-my.sharepoint.com/:v:/g/personal/rp253445_fi365_ort_edu_uy/EVnmw0N0chFBh3J5XRScUqoBXnVY7EdbeZtE8QIcr3I3_g
 - Registro de trabajo y esfuerzo: https://docs.google.com/spreadsheets/d/1CH1StvujrBarjhQGGWPgPqAwg7LWsGvZgIy1uMkyUCU/edit?usp=sharing
+- Tablero git project: https://github.com/orgs/IngSoft-ISA2-2023-2/projects/14
+
+### Issues
+
+##### Entrega 1
+
+<img width="472" alt="image" src="https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/assets/89783678/c3167e17-7da5-49d6-b695-0fca480ed6c2">
 
 ## Informe Final
 
