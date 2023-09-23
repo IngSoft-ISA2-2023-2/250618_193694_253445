@@ -322,6 +322,22 @@ namespace PharmaGo.Test.BusinessLogic.Test
 
         [TestMethod]
         [ExpectedException(typeof(InvalidResourceException))]
+        public void UpdateInvitation_WithInvalidUserCodeLength_ShouldReturnInvalidException()
+        {
+            // Arrange
+            var id = 1;
+            var invitation = new Invitation() { UserCode = "12345" };
+
+            _invitationMock.Setup(invitation => invitation
+            .GetOneDetailByExpression(It.IsAny<Expression<Func<Invitation, bool>>>()))
+            .Returns(new Invitation() { Id = id });
+
+            // Act
+            var result = _invitationManager.UpdateInvitation(id, invitation);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidResourceException))]
         public void UpdateInvitation_WithRoleAdministrator_ShouldNotHavePharmacy()
         {
             //Arrange
