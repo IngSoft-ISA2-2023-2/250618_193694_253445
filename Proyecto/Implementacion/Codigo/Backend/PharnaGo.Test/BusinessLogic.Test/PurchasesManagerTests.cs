@@ -1,9 +1,12 @@
-﻿using Microsoft.VisualBasic;
+﻿using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.VisualBasic;
 using Moq;
 using PharmaGo.BusinessLogic;
+using PharmaGo.DataAccess.Repositories;
 using PharmaGo.Domain.Entities;
 using PharmaGo.Exceptions;
 using PharmaGo.IDataAccess;
+using System.Runtime.InteropServices;
 
 namespace PharmaGo.Test.BusinessLogic.Test
 {
@@ -568,7 +571,7 @@ namespace PharmaGo.Test.BusinessLogic.Test
         [ExpectedException(typeof(ResourceNotFoundException))]
         public void Approve_Purchase_Fail_Drug_Not_Found()
         {
-            pharmacy.Drugs = new List<Drug> { new Drug { Deleted = true, Code = "XF32500" } };
+            pharmacy.Drugs = new List<Drug> { new Drug { Deleted = false, Code = "XF32500" } };
             //Arrange
             _purchaseRespository
                 .Setup(y => y.GetOneDetailByExpression(p => p.Id == 1))
@@ -579,6 +582,35 @@ namespace PharmaGo.Test.BusinessLogic.Test
 
             //Act
             var response = _purchasesManager.ApprobePurchaseDetail(1, 1, "XF324");
+        }
+
+        [TestMethod]
+        public void Approve_Purchase_Fail_Drug_Deleted()
+        {
+            pharmacy.Drugs = new List<Drug> { new Drug { Deleted = true, Code = "XF324" } };
+            //Arrange
+            Exception exceptionResult = null;
+            _purchaseRespository
+                .Setup(y => y.GetOneDetailByExpression(p => p.Id == 1))
+                .Returns(purchase);
+            _pharmacyRespository
+                .Setup(f => f.GetOneByExpression(p => p.Id == 1))
+                .Returns(pharmacy);
+
+            //Act
+            try
+            {
+                var response = _purchasesManager.ApprobePurchaseDetail(1, 1, "XF324");
+            }
+            catch (Exception ex)
+            {
+                exceptionResult = ex;
+            }
+
+            //Assert
+            Assert.IsNotNull(exceptionResult);
+            Assert.IsInstanceOfType(exceptionResult, typeof(ResourceNotFoundException));
+            Assert.AreEqual(exceptionResult.Message, "Drug XF324 was deleted on Pharmacy Farmacia 1, cannot approve only reject");
         }
 
         [TestMethod]

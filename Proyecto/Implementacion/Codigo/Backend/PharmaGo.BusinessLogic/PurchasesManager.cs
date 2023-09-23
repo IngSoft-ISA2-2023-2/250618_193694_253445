@@ -113,10 +113,11 @@ namespace PharmaGo.BusinessLogic
             if (pharmacy is null)
                 throw new ResourceNotFoundException($"Pharmacy with Id: {pharmacyId} not found");
 
-            var drug = pharmacy.Drugs.FirstOrDefault(x => x.Code == drugCode && x.Deleted == false);
+            var drug = pharmacy.Drugs.FirstOrDefault(x => x.Code == drugCode);
             if (drug is null)
                 throw new ResourceNotFoundException($"Drug {drugCode} not found in Pharmacy {pharmacy.Name}");
-
+            if (drug.Deleted)
+                throw new ResourceNotFoundException($"Drug {drugCode} was deleted on Pharmacy {pharmacy.Name}, cannot approve only reject");
             // Check Stock
             if (purchaseDetail.Quantity > drug.Stock)
                 throw new InvalidResourceException($"The Drug {drug.Code} is out of stock in Pharmacy {pharmacy.Name}");
@@ -154,7 +155,7 @@ namespace PharmaGo.BusinessLogic
             if (pharmacy is null)
                 throw new ResourceNotFoundException($"Pharmacy with Id: {pharmacyId} not found");
 
-            var drug = pharmacy.Drugs.FirstOrDefault(x => x.Code == drugCode && x.Deleted == false);
+            var drug = pharmacy.Drugs.FirstOrDefault(x => x.Code == drugCode);
             if (drug is null)
                 throw new ResourceNotFoundException($"Drug {drugCode} not found in Pharmacy {pharmacy.Name}");
 
