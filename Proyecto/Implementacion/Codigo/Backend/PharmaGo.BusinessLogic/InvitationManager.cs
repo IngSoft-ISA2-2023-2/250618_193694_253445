@@ -163,8 +163,14 @@ namespace PharmaGo.BusinessLogic
                 invitationEntity.Pharmacy = null;
             }
 
-            if (!string.IsNullOrEmpty(invitation.UserCode))
+            if (!string.IsNullOrEmpty(invitation.UserCode) && invitation.UserCode.Length == 6)
+            {
                 invitationEntity.UserCode = invitation.UserCode;
+            }
+            else
+            {
+                throw new InvalidResourceException("Invalid Invitation Code.");
+            }
 
             _invitationRepository.UpdateOne(invitationEntity);
             _invitationRepository.Save();
