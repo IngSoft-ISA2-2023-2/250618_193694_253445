@@ -322,6 +322,46 @@ namespace PharmaGo.Test.BusinessLogic.Test
 
         [TestMethod]
         [ExpectedException(typeof(InvalidResourceException))]
+        public void UpdateInvitation_With7DigitCode_ShouldReturnInvalidException()
+        {
+            //Arrange
+            var id = 1;
+            var invitation = new Invitation() { UserCode = "0786789" };
+
+            _invitationMock.Setup(invitation => invitation
+            .GetOneDetailByExpression(It.IsAny<Expression<Func<Invitation, bool>>>())).Returns(new Invitation());
+
+            _roleMock.Setup(role => role.GetOneByExpression(It.IsAny<Expression<Func<Role, bool>>>())).Returns(new Role());
+
+            _invitationMock.Setup(invitation => invitation
+            .GetOneByExpression(It.IsAny<Expression<Func<Invitation, bool>>>())).Returns(new Invitation());
+
+            //Act
+            var result = _invitationManager.UpdateInvitation(id, invitation);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidResourceException))]
+        public void UpdateInvitation_With5DigitCode_ShouldReturnInvalidException()
+        {
+            //Arrange
+            var id = 1;
+            var invitation = new Invitation() { UserCode = "07889" };
+
+            _invitationMock.Setup(invitation => invitation
+            .GetOneDetailByExpression(It.IsAny<Expression<Func<Invitation, bool>>>())).Returns(new Invitation());
+
+            _roleMock.Setup(role => role.GetOneByExpression(It.IsAny<Expression<Func<Role, bool>>>())).Returns(new Role());
+
+            _invitationMock.Setup(invitation => invitation
+            .GetOneByExpression(It.IsAny<Expression<Func<Invitation, bool>>>())).Returns(new Invitation());
+
+            //Act
+            var result = _invitationManager.UpdateInvitation(id, invitation);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidResourceException))]
         public void UpdateInvitation_WithRoleAdministrator_ShouldNotHavePharmacy()
         {
             //Arrange
