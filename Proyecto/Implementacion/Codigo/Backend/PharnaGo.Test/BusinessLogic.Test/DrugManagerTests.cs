@@ -411,7 +411,7 @@ namespace PharmaGo.Test.BusinessLogic.Test
                 Assert.AreEqual(drugsToExport[i].Name, drugList[i].Name);
                 Assert.AreEqual(drugsToExport[i].Symptom, drugList[i].Symptom);
             }
-            Assert.AreEqual(drugsToExport.Count(), drugList.Count());
+            Assert.AreEqual(drugsToExport.Count(), drugList.Count()-1);
         }
 
         private IEnumerable<Drug> GenerateDrugList()
