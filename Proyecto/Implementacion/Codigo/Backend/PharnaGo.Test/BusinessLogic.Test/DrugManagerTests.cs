@@ -378,6 +378,42 @@ namespace PharmaGo.Test.BusinessLogic.Test
             }
         }
 
+        [TestMethod]
+        public void GetDrugsToExportDeletedOk()
+        {
+            _sessionRepository.Setup(r => r.GetOneByExpression(It.IsAny<Expression<Func<Session, bool>>>())).Returns(session);
+            _userRepository.Setup(r => r.GetOneDetailByExpression(It.IsAny<Expression<Func<User, bool>>>())).Returns(user);
+            List<Drug> drugList = GenerateDrugList() as List<Drug>;
+            Drug m = new Drug()
+            {
+                Id = 11,
+                Code = "drugCode11",
+                Name = "drugName11",
+                Price = 100,
+                Prescription = false,
+                Deleted = true,
+                Stock = 0,
+                Symptom = "headache",
+                Quantity = 1,
+                Presentation = new Presentation { Id = 11, Name = "capsules", Deleted = true },
+                UnitMeasure = new UnitMeasure { Id = 11, Name = "g", Deleted = true }
+            };
+            drugList.Add(m);
+            List<Drug> druglist1 = drugList.TakeWhile(d => d.Deleted == false).ToList();
+            _drugRepository.Setup(r => r.GetAllByExpression(It.IsAny<Expression<Func<Drug, bool>>>())).Returns(druglist1);
+            var drugsToExport = (List<DrugExportationModel>)_drugManager.GetDrugsToExport(token);
+
+            // Assert
+            _drugRepository.VerifyAll();
+            for (int i = 0; i < drugsToExport.Count(); i++)
+            {
+                Assert.AreEqual(drugsToExport[i].Code, drugList[i].Code);
+                Assert.AreEqual(drugsToExport[i].Name, drugList[i].Name);
+                Assert.AreEqual(drugsToExport[i].Symptom, drugList[i].Symptom);
+            }
+            Assert.AreEqual(drugsToExport.Count(), drugList.Count());
+        }
+
         private IEnumerable<Drug> GenerateDrugList()
         {
             var drugList = new List<Drug>();
