@@ -11,6 +11,5 @@ namespace ExportationModel.ExportDomain
         public string Code { get; set; }
         public string Name { get; set; }
         public string Symptom { get; set; }
-        public bool Deleted { get; set; }
     }
 }
