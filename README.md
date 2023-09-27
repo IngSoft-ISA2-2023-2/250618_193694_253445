@@ -34,11 +34,28 @@ Drive con archivos: https://drive.google.com/drive/folders/1qN_UFLUm22r_9S9Otx9I
 - Registro de trabajo y esfuerzo: https://docs.google.com/spreadsheets/d/1CH1StvujrBarjhQGGWPgPqAwg7LWsGvZgIy1uMkyUCU/edit?usp=sharing
 - Tablero git project: https://github.com/orgs/IngSoft-ISA2-2023-2/projects/14
 
+#### Entrega 2
+
+- Tablero retrometro: https://metroretro.io/BORF4V3O3I3K
+- Video retrospectiva: ...
+- Registro de trabajo y esfuerzo: https://docs.google.com/spreadsheets/d/1wKh8-r3fPpJKQgw_Q7F1ZQg5V3u6WQI1mQD4IG_aL1Q/edit?usp=sharing
+- Tablero git project: https://github.com/orgs/IngSoft-ISA2-2023-2/projects/24/views/1
+- Git Actions: https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/actions
+
 ### Issues
 
 ##### Entrega 1
 
 <img width="472" alt="image" src="https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/assets/89783678/c3167e17-7da5-49d6-b695-0fca480ed6c2">
+
+##### Entrega 2
+
+![image](https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/assets/89783678/f31549eb-222c-45ac-a48c-9de10bec5afa)
+![image](https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/assets/89783678/22615d81-6c50-4078-8937-bbb99e2d762d)
+
+- Issue 3: https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/issues/3
+- Issue 4: https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/issues/4
+- Issue 6: https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/issues/8
 
 ## Informe Final
 
