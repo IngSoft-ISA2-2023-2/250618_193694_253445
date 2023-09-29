@@ -37,7 +37,7 @@ Drive con archivos: https://drive.google.com/drive/folders/1qN_UFLUm22r_9S9Otx9I
 #### Entrega 2
 
 - Tablero retrometro: https://metroretro.io/BO21NO6NDOFF
-- Video retrospectiva: https://fi365-my.sharepoint.com/:v:/g/personal/aw193694_fi365_ort_edu_uy/EWTRttLny1dGpaOvcRhrNKQBHmnW-r6ZTEl93qmPM4o2aA
+- Video retrospectiva: https://fi365-my.sharepoint.com/:v:/g/personal/aw193694_fi365_ort_edu_uy/Ec3CVXAtBmdGgKwqwNI7M9EBmWlulDygdaxJtiWKFbRvqw?e=MXjAd6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19
 - Registro de trabajo y esfuerzo: https://docs.google.com/spreadsheets/d/1wKh8-r3fPpJKQgw_Q7F1ZQg5V3u6WQI1mQD4IG_aL1Q/edit?usp=sharing
 - Tablero git project: https://github.com/orgs/IngSoft-ISA2-2023-2/projects/24/views/1
 - Git Actions: https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/actions
