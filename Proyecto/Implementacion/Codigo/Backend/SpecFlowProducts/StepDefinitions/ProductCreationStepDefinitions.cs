@@ -1,4 +1,12 @@
+using Microsoft.AspNetCore.Http;
+using Microsoft.Build.Evaluation;
+using Newtonsoft.Json;
+using PharmaGo.Domain;
+using PharmaGo.Domain.Entities;
+using PharmaGo.WebApi.Models.In;
 using System;
+using System.Net;
+using System.Net.Http.Headers;
 using TechTalk.SpecFlow;
 
 namespace SpecFlowProducts.StepDefinitions
@@ -6,46 +14,88 @@ namespace SpecFlowProducts.StepDefinitions
     [Binding]
     public class ProductCreationStepDefinitions
     {
-        [Given(@"the code (.*)")]
-        public void GivenTheCode(int p0)
+        private readonly ScenarioContext context;
+        private readonly ProductModel _productModel = new ProductModel();
+
+
+        public ProductCreationStepDefinitions(ScenarioContext context)
         {
-            throw new PendingStepException();
+            this.context = context;
+        }
+
+        [Given(@"the code ""(.*)""")]
+        public void GivenTheCode(string code)
+        {
+            _productModel.Code = code;
         }
 
         [Given(@"the name ""([^""]*)""")]
-        public void GivenTheName(string p0)
+        public void GivenTheName(string name)
         {
-            throw new PendingStepException();
+            _productModel.Name = name;
         }
 
         [Given(@"the description  ""([^""]*)""")]
-        public void GivenTheDescription(string p0)
+        public void GivenTheDescription(string description)
         {
-            throw new PendingStepException();
+            _productModel.Description = description;
         }
 
         [Given(@"the price (.*)")]
-        public void GivenThePrice(Decimal p0)
+        public void GivenThePrice(Decimal price)
         {
-            throw new PendingStepException();
+            _productModel.Price = price;
         }
 
-        [When(@"the data is introduced")]
-        public void WhenTheDataIsIntroduced()
+        [Given(@"the pharmacy ""([^""]*)""")]
+        public void GivenThePharmacy(string pharmacyName)
         {
-            throw new PendingStepException();
+            _productModel.PharmacyName = pharmacyName;
         }
+
 
         [When(@"press the create button")]
-        public void WhenPressTheCreateButton()
+        public async Task WhenPressTheCreateButtonAsync()
         {
-            throw new PendingStepException();
+            string requestBody = JsonConvert.SerializeObject(_productModel);
+
+            // set up Http Request Message
+            // ATENCIÓN: Se deberá de modificar el puerto que está en la línea debajo
+            var request = new HttpRequestMessage(HttpMethod.Post, $"https://localhost:7186/api/Product")
+            {
+                Content = new StringContent(requestBody)
+                {
+                    Headers =
+                        {
+                          ContentType = new MediaTypeHeaderValue("application/json")
+                        }
+                }
+            };
+
+            string authToken = "e9e0e1e9-3812-4eb5-949e-ae92ac931401";
+            request.Headers.Authorization = new AuthenticationHeaderValue("Authorization", authToken);
+
+            // create an http client
+            var client = new HttpClient();
+            // let's post
+            var response = await client.SendAsync(request).ConfigureAwait(false);
+            try
+            {
+                context.Set(response.StatusCode, "ResponseStatusCode");
+            }
+            finally
+            {
+                // move along, move along
+            }
         }
 
-        [Then(@"the product should be registered correctly")]
-        public void ThenTheProductShouldBeRegisteredCorrectly()
+
+        [Then(@"the product should be registered correctly with code (.*)")]
+        public void ThenTheProductShouldBeRegisteredCorrectlyWithCode(int statusCode)
         {
-            throw new PendingStepException();
+            Assert.AreEqual(statusCode, (int)context.Get<HttpStatusCode>("ResponseStatusCode"));
         }
+
+
     }
 }
