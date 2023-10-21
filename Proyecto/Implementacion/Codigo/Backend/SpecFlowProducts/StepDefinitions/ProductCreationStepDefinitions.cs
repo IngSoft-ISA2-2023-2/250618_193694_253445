@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.Build.Evaluation;
 using Newtonsoft.Json;
+using PharmaGo.DataAccess.Repositories;
 using PharmaGo.Domain;
 using PharmaGo.Domain.Entities;
 using PharmaGo.WebApi.Models.In;
@@ -8,6 +9,9 @@ using System;
 using System.Net;
 using System.Net.Http.Headers;
 using TechTalk.SpecFlow;
+using PharmaGo.DataAccess;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace SpecFlowProducts.StepDefinitions
 {
@@ -16,7 +20,7 @@ namespace SpecFlowProducts.StepDefinitions
     {
         private readonly ScenarioContext context;
         private readonly ProductModel _productModel = new ProductModel();
-
+        private Product responseObject;
 
         public ProductCreationStepDefinitions(ScenarioContext context)
         {
@@ -58,7 +62,6 @@ namespace SpecFlowProducts.StepDefinitions
         public async Task WhenPressTheCreateButtonAsync()
         {
             string requestBody = JsonConvert.SerializeObject(_productModel);
-
             // set up Http Request Message
             // ATENCIÓN: Se deberá de modificar el puerto que está en la línea debajo
             var request = new HttpRequestMessage(HttpMethod.Post, $"https://localhost:7186/api/Product")
@@ -82,6 +85,9 @@ namespace SpecFlowProducts.StepDefinitions
             try
             {
                 context.Set(response.StatusCode, "ResponseStatusCode");
+                var responseContent = await response.Content.ReadAsStringAsync();
+                this.responseObject = (Product)JsonConvert.DeserializeObject<Product>(responseContent);
+                Console.WriteLine(this.responseObject);
             }
             finally
             {
@@ -94,6 +100,13 @@ namespace SpecFlowProducts.StepDefinitions
         public void ThenTheProductShouldBeRegisteredCorrectlyWithCode(int statusCode)
         {
             Assert.AreEqual(statusCode, (int)context.Get<HttpStatusCode>("ResponseStatusCode"));
+            Assert.AreEqual(this.responseObject.Code, this._productModel.Code);
+            // Delete the element before inserting it
+            DbContextOptions<PharmacyGoDbContext> _options = new DbContextOptionsBuilder<PharmacyGoDbContext>().UseSqlServer("Server=.\\SQLEXPRESS;Database=PharmaGoDb;Trusted_Connection=True; MultipleActiveResultSets=True").Options;
+            PharmacyGoDbContext dbContext = new PharmacyGoDbContext(_options);
+            ProductRepository productRepository = new ProductRepository(dbContext);
+            productRepository.DeleteOne(this.responseObject);
+            productRepository.Save(); 
         }
 
 
