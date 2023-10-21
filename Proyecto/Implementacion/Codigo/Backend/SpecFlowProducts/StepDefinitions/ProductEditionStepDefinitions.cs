@@ -36,11 +36,6 @@ namespace SpecFlowProducts.StepDefinitions
             throw new PendingStepException();
         }
 
-        [When(@"I press the ""([^""]*)"" button")]
-        public void WhenIPressTheButton(string save)
-        {
-            throw new PendingStepException();
-        }
 
         [Then(@"I should see a message that says ""([^""]*)""")]
         public void ThenIShouldSeeAMessageThatSays(string p0)

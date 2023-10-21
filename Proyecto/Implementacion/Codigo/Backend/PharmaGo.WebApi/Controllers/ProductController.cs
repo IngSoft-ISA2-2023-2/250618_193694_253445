@@ -22,15 +22,5 @@ namespace PharmaGo.WebApi.Controllers
         {
             _productManager = manager;
         }
-
-        [HttpPost]
-        [AuthorizationFilter(new string[] { nameof(RoleType.Employee) })]
-        public IActionResult Create([FromBody] ProductModel productModel)
-        {
-            string token = HttpContext.Request.Headers["Authorization"];
-            Product productCreated = _productManager.Create(productModel.ToEntity(), token);
-            ProductDetailModel productResponse = new ProductDetailModel(productCreated);
-            return Ok(productResponse);
-        }
     }
 }
