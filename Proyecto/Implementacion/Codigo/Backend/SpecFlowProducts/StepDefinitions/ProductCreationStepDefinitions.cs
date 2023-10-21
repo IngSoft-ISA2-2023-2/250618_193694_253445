@@ -73,7 +73,7 @@ namespace SpecFlowProducts.StepDefinitions
             };
 
             string authToken = "e9e0e1e9-3812-4eb5-949e-ae92ac931401";
-            request.Headers.Authorization = new AuthenticationHeaderValue("Authorization", authToken);
+            request.Headers.Authorization = new AuthenticationHeaderValue(authToken);
 
             // create an http client
             var client = new HttpClient();

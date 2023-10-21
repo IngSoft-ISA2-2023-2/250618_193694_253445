@@ -7,13 +7,13 @@
 
 @tag1
 Scenario: Create product with correct data
-	Given the code "12345"
+	Given the code "12347"
 	And the name "Shampoo Sedal 200 ml"
 	And the description  "Dale vida a tu pelo con el nuevo shampoo Sedal"
 	And the price 80,00
 	And the pharmacy "famacia1234"
 	When press the create button
-	Then the product should be registered correctly with code 201
+	Then the product should be registered correctly with code 200
 
 
 
