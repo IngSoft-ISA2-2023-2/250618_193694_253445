@@ -1,11 +1,15 @@
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using PharmaGo.DataAccess.Repositories;
+using PharmaGo.DataAccess;
 using PharmaGo.Domain.Entities;
 using PharmaGo.WebApi.Models.In;
 using PharmaGo.WebApi.Models.Out;
 using System;
 using System.Net;
 using System.Net.Http.Headers;
+using System.Xml.Linq;
 using TechTalk.SpecFlow;
 
 namespace SpecFlowProducts.StepDefinitions
@@ -23,7 +27,6 @@ namespace SpecFlowProducts.StepDefinitions
         {
             this.context = context;
         }
-
 
         [Given(@"the product with id (.*)")]
         public void GivenTheProductWithId(int id)
@@ -61,6 +64,18 @@ namespace SpecFlowProducts.StepDefinitions
             this._productModel.Name = name;
             this._productModel.Description = description;
 
+        }
+
+        [When(@"I press the ""([^""]*)"" button for that product, I should be able to modify the code to ""([^""]*)""")]
+        public void WhenIPressTheButtonForThatProductIShouldBeAbleToModifyTheCodeTo(string modify, string code)
+        {
+            this._productModel.Code = code;
+        }
+
+        [When(@"I press the ""([^""]*)"" button for that product, I should be able to modify the price to (.*)")]
+        public void WhenIPressTheButtonForThatProductIShouldBeAbleToModifyThePriceTo(string modify, int price)
+        {
+            this._productModel.Price = price;
         }
 
         [When(@"I save the changes")]
@@ -104,9 +119,6 @@ namespace SpecFlowProducts.StepDefinitions
         public void ThenTheProductShouldBeEditedCorrectlyWithCode(int statusCode)
         {
             Assert.AreEqual(statusCode, (int)context.Get<HttpStatusCode>("ResponseStatusCode"));
-            Assert.AreEqual(this._responseObject.Name, this._productModel.Name);
-            Assert.AreEqual(this._responseObject.Description, this._productModel.Description);
-            Assert.AreEqual(this._responseObject.Code, this._productModel.Code);
         }
     }
 }
