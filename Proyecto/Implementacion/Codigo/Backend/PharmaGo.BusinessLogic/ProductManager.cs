@@ -28,5 +28,10 @@ namespace PharmaGo.BusinessLogic
             _userRepository = userRespository;
         }
 
+        public Product Edit(int id, Product updatedProduct)
+        {
+            return updatedProduct;
+        }
+
     }
 }
