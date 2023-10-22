@@ -112,14 +112,13 @@ import { CreateProductComponent } from './pages/employee/create-product/create-p
     StockRequestComponent,
     CreateRequestComponent,
     ExportDrugsComponent,
+    CreateProductComponent,
     // Owner
     OwnerComponent,
     PurchaseByDateComponent,
     InvitationComponent,
     StockRequestOwnerComponent,
     CreateProductComponent,
-    
-
   ],
   imports: [
     BrowserModule,
