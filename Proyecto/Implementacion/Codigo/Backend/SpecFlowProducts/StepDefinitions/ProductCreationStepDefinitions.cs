@@ -5,7 +5,6 @@ using PharmaGo.DataAccess.Repositories;
 using PharmaGo.Domain;
 using PharmaGo.Domain.Entities;
 using PharmaGo.WebApi.Models.In;
-using PharmaGo.WebApi.Models.Out;
 using System;
 using System.Net;
 using System.Net.Http.Headers;
@@ -21,8 +20,8 @@ namespace SpecFlowProducts.StepDefinitions
     {
         private readonly ScenarioContext context;
         private readonly ProductModel _productModel = new ProductModel();
-        private ProductDetailModel responseObject;
-        private string _responseContent;
+        private Product responseObject;
+        private string _responseContent; 
 
         public ProductCreationStepDefinitions(ScenarioContext context)
         {
@@ -39,7 +38,7 @@ namespace SpecFlowProducts.StepDefinitions
         public void GivenTheName(string name)
         {
             _productModel.Name = name;
-        }
+        } 
 
         [Given(@"the description  ""([^""]*)""")]
         public void GivenTheDescription(string description)
@@ -53,7 +52,7 @@ namespace SpecFlowProducts.StepDefinitions
             _productModel.Price = price;
         }
 
-        [Given(@"the pharmacy ""([^""]*)""")]
+        [Given(@"the pharmacy ""([^""]*)""")] 
         public void GivenThePharmacy(string pharmacyName)
         {
             _productModel.PharmacyName = pharmacyName;
@@ -75,7 +74,7 @@ namespace SpecFlowProducts.StepDefinitions
                           ContentType = new MediaTypeHeaderValue("application/json")
                         }
                 }
-            };
+            }; 
 
             string authToken = "e9e0e1e9-3812-4eb5-949e-ae92ac931401";
             request.Headers.Authorization = new AuthenticationHeaderValue(authToken);
@@ -86,10 +85,12 @@ namespace SpecFlowProducts.StepDefinitions
             var response = await client.SendAsync(request).ConfigureAwait(false);
             try
             {
+                Console.WriteLine("adsd");
                 context.Set(response.StatusCode, "ResponseStatusCode");
                 _responseContent = await response.Content.ReadAsStringAsync();
                 Console.WriteLine(_responseContent);
-                this.responseObject = (ProductDetailModel)JsonConvert.DeserializeObject<ProductDetailModel>(_responseContent);
+                Console.WriteLine("adsd"); 
+                this.responseObject = (Product)JsonConvert.DeserializeObject<Product>(_responseContent);
             } 
             finally
             {
@@ -107,8 +108,7 @@ namespace SpecFlowProducts.StepDefinitions
             DbContextOptions<PharmacyGoDbContext> _options = new DbContextOptionsBuilder<PharmacyGoDbContext>().UseSqlServer("Server=.\\SQLEXPRESS;Database=PharmaGoDb;Trusted_Connection=True; MultipleActiveResultSets=True").Options;
             PharmacyGoDbContext dbContext = new PharmacyGoDbContext(_options);
             ProductRepository productRepository = new ProductRepository(dbContext);
-            Product p = productRepository.GetOneByExpression(p => p.Id.Equals(this.responseObject.Id));
-            productRepository.DeleteOne(p);
+            productRepository.DeleteOne(this.responseObject);
             productRepository.Save(); 
         }
 
