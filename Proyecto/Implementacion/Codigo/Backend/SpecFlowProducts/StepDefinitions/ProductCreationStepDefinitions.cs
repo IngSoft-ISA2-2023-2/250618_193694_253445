@@ -21,6 +21,7 @@ namespace SpecFlowProducts.StepDefinitions
         private readonly ScenarioContext context;
         private readonly ProductModel _productModel = new ProductModel();
         private Product responseObject;
+        private string _responseContent;
 
         public ProductCreationStepDefinitions(ScenarioContext context)
         {
@@ -85,10 +86,10 @@ namespace SpecFlowProducts.StepDefinitions
             try
             {
                 context.Set(response.StatusCode, "ResponseStatusCode");
-                var responseContent = await response.Content.ReadAsStringAsync();
-                this.responseObject = (Product)JsonConvert.DeserializeObject<Product>(responseContent);
-                Console.WriteLine(this.responseObject);
-            }
+                _responseContent = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(_responseContent);
+                this.responseObject = (Product)JsonConvert.DeserializeObject<Product>(_responseContent);
+            } 
             finally
             {
                 // move along, move along
@@ -109,6 +110,11 @@ namespace SpecFlowProducts.StepDefinitions
             productRepository.Save(); 
         }
 
+        [Then(@"the product should not be registered with code (.*)")]
+        public void ThenTheProductShouldNotBeRegisteredWithCode(int statusCode)
+        {
+            Assert.AreEqual(statusCode, (int)context.Get<HttpStatusCode>("ResponseStatusCode"));
+        }
 
-    }
+}
 }

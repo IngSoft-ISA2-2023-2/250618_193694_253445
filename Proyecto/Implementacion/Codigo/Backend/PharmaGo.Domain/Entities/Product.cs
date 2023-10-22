@@ -1,4 +1,6 @@
 ﻿using PharmaGo.Exceptions;
+using System;
+using System.Text.RegularExpressions;
 
 namespace PharmaGo.Domain.Entities
 {
@@ -24,14 +26,31 @@ namespace PharmaGo.Domain.Entities
             {
                 throw new InvalidResourceException("The product was not correctly created.");
             }
-            if (Name.Length > 30)
+            if (Code.Length != 5 || !isNumeric(Code))
             {
-                throw new InvalidResourceException("The product name is incorrect, length should be lower that 30 characters");
+                throw new InvalidResourceException("The code must have a length of 5 digits");
+
             }
-            if (Description.Length > 70)
+            if (Name.Length > 30 || !isAlphaNumeric(Name))
             {
-                throw new InvalidResourceException("The product description is incorrect, length should be lower that 70 characters");
+                throw new InvalidResourceException("The product name is incorrect, length should be lower that 30 characters and alphanumeric");
             }
+            if (Description.Length > 70 || !isAlphaNumeric(Description))
+            {
+                throw new InvalidResourceException("The product description is incorrect, length should be lower that 70 characters and alphanumeric");
+            }
+        }
+
+        private static bool isAlphaNumeric(string strToCheck)
+        {
+            Regex rg = new Regex(@"^[a-zA-Z0-9\s,]*$");
+            return rg.IsMatch(strToCheck);
+        }
+
+        private static bool isNumeric(string strToCheck)
+        {
+            Regex rg = new Regex(@"^[0-9]*$");
+            return rg.IsMatch(strToCheck);
         }
     }
 }
