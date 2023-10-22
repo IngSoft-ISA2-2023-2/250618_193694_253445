@@ -5,6 +5,7 @@ using PharmaGo.DataAccess.Repositories;
 using PharmaGo.Domain;
 using PharmaGo.Domain.Entities;
 using PharmaGo.WebApi.Models.In;
+using PharmaGo.WebApi.Models.Out;
 using System;
 using System.Net;
 using System.Net.Http.Headers;
@@ -20,7 +21,7 @@ namespace SpecFlowProducts.StepDefinitions
     {
         private readonly ScenarioContext context;
         private readonly ProductModel _productModel = new ProductModel();
-        private Product responseObject;
+        private ProductDetailModel responseObject;
         private string _responseContent;
 
         public ProductCreationStepDefinitions(ScenarioContext context)
@@ -88,7 +89,7 @@ namespace SpecFlowProducts.StepDefinitions
                 context.Set(response.StatusCode, "ResponseStatusCode");
                 _responseContent = await response.Content.ReadAsStringAsync();
                 Console.WriteLine(_responseContent);
-                this.responseObject = (Product)JsonConvert.DeserializeObject<Product>(_responseContent);
+                this.responseObject = (ProductDetailModel)JsonConvert.DeserializeObject<ProductDetailModel>(_responseContent);
             } 
             finally
             {
@@ -106,7 +107,8 @@ namespace SpecFlowProducts.StepDefinitions
             DbContextOptions<PharmacyGoDbContext> _options = new DbContextOptionsBuilder<PharmacyGoDbContext>().UseSqlServer("Server=.\\SQLEXPRESS;Database=PharmaGoDb;Trusted_Connection=True; MultipleActiveResultSets=True").Options;
             PharmacyGoDbContext dbContext = new PharmacyGoDbContext(_options);
             ProductRepository productRepository = new ProductRepository(dbContext);
-            productRepository.DeleteOne(this.responseObject);
+            Product p = productRepository.GetOneByExpression(p => p.Id.Equals(this.responseObject.Id));
+            productRepository.DeleteOne(p);
             productRepository.Save(); 
         }
 
