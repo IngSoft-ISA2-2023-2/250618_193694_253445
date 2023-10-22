@@ -17,7 +17,7 @@ namespace PharmaGo.Domain.Entities
 
         public Product()
         {
-        
+
         }
         public void ValidOrFail()
         {
@@ -52,8 +52,17 @@ namespace PharmaGo.Domain.Entities
             Regex rg = new Regex(@"^[0-9]*$");
             return rg.IsMatch(strToCheck);
         }
+
+        private static bool isAlphaNumeric(string strToCheck)
+        {
+            Regex rg = new Regex(@"^[a-zA-Z0-9\s,]*$");
+            return rg.IsMatch(strToCheck);
+        }
+
+        private static bool isNumeric(string strToCheck)
+        {
+            Regex rg = new Regex(@"^[0-9]*$");
+            return rg.IsMatch(strToCheck);
+        }
     }
 }
-
-
-

@@ -4,6 +4,6 @@ namespace PharmaGo.IBusinessLogic
 {
     public interface IProductManager
     {
-        Product Create(Product product, string token);
+        Product Edit(int id, Product updatedProduct);
     }
 }

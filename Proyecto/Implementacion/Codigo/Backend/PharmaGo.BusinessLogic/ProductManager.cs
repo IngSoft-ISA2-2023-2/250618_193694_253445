@@ -28,34 +28,40 @@ namespace PharmaGo.BusinessLogic
             _userRepository = userRespository;
         }
 
-        public Product Create(Product product, string token)
+        public Product Edit(int id, Product updatedProduct)
         {
-            if (product == null)
+            if (updatedProduct == null)
             {
-                throw new ResourceNotFoundException("Please create a product before inserting it.");
-            }
-            product.ValidOrFail();
-
-            var guidToken = new Guid(token);
-            Session session = _sessionRepository.GetOneByExpression(s => s.Token == guidToken);
-            var userId = session.UserId;
-            User user = _userRepository.GetOneDetailByExpression(u => u.Id == userId);
-
-            Pharmacy pharmacyOfDrug = _pharmacyRepository.GetOneByExpression(p => p.Name == user.Pharmacy.Name);
-            if (pharmacyOfDrug == null)
-            {
-                throw new ResourceNotFoundException("The pharmacy of the drug does not exist.");
+                throw new ResourceNotFoundException("The updated product is invalid.");
             }
 
-            if (_productRepository.Exists(d => d.Code == product.Code && d.Pharmacy.Name == pharmacyOfDrug.Name))
+            updatedProduct.ValidOrFail();
+
+            var productSaved = _productRepository.GetOneByExpression(d => d.Id == id);
+
+            if (productSaved == null)
             {
-                throw new InvalidResourceException("The drug already exists in that pharmacy.");
+                throw new ResourceNotFoundException("The product to update does not exist.");
             }
 
-            product.Pharmacy.Id = pharmacyOfDrug.Id;
-            _productRepository.InsertOne(product);
+            var existingProductWithSameCode = _productRepository.GetOneByExpression(p => p.Pharmacy.Name == productSaved.Pharmacy.Name && p.Code == updatedProduct.Code);
+
+            if (existingProductWithSameCode != null && existingProductWithSameCode.Id != id)
+            {
+                throw new InvalidOperationException("Another product with the same code already exists in the pharmacy.");
+            }
+
+            productSaved.Code = updatedProduct.Code;
+            productSaved.Name = updatedProduct.Name;
+            productSaved.Price = updatedProduct.Price;
+            productSaved.Description = updatedProduct.Description;
+
+            _productRepository.UpdateOne(productSaved);
             _productRepository.Save();
-            return product;
+
+            return productSaved;
         }
+
+
     }
 }

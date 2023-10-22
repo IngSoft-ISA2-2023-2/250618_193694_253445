@@ -23,14 +23,12 @@ namespace PharmaGo.WebApi.Controllers
             _productManager = manager;
         }
 
-        [HttpPost]
-        [AuthorizationFilter(new string[] { nameof(RoleType.Employee) })]
-        public IActionResult Create([FromBody] ProductModel productModel)
+        [HttpPut("{id}")]
+        [AuthorizationFilter(new string[] { nameof(RoleType.Administrator) })]
+        public IActionResult Edit([FromRoute] int id, [FromBody] UpdateProductModel updatedProduct)
         {
-            string token = HttpContext.Request.Headers["Authorization"];
-            Product productCreated = _productManager.Create(productModel.ToEntity(), token);
-            ProductDetailModel productResponse = new ProductDetailModel(productCreated);
-            return Ok(productResponse);
+            Product product = _productManager.Edit(id, updatedProduct.ToEntity());
+            return Ok(new ProductDetailModel(product));
         }
     }
 }
