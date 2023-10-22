@@ -8,6 +8,7 @@ export interface Product {
       id: number;
       name: string;  
     };
+    deleted: boolean;
   }
 
   export class ProductRequest {
@@ -16,6 +17,7 @@ export interface Product {
     price: number;
     description: string;
     pharmacyName: string = "";
+    deleted: boolean;
 
     constructor(code: string, name: string, price: number,  description: string,
       pharmacyName: string){
@@ -24,5 +26,6 @@ export interface Product {
       this.description = description;
       this.price = price;
       this.pharmacyName = pharmacyName;
+      this.deleted = false;
     }
   }
