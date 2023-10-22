@@ -1,9 +1,8 @@
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
-using PharmaGo.DataAccess.Repositories;
-using PharmaGo.DataAccess;
 using PharmaGo.Domain.Entities;
 using PharmaGo.WebApi.Models.In;
+using PharmaGo.WebApi.Models.Out;
 using System;
 using System.Net;
 using System.Net.Http.Headers;
@@ -14,16 +13,17 @@ namespace SpecFlowProducts.StepDefinitions
     [Binding]
     public class ProductEditionStepDefinitions
     {
-
         private readonly ScenarioContext context;
         private readonly UpdateProductModel _productModel = new UpdateProductModel();
-        private Product responseObject;
+        private Product _responseObject;
+        private string _responseContent;
         private int productId;
 
         public ProductEditionStepDefinitions(ScenarioContext context)
         {
             this.context = context;
         }
+
 
         [Given(@"the product with id (.*)")]
         public void GivenTheProductWithId(int id)
@@ -36,7 +36,6 @@ namespace SpecFlowProducts.StepDefinitions
         {
             this._productModel.Code = code;
         }
-
 
         [Given(@"name ""([^""]*)""")]
         public void GivenName(string name)
@@ -61,16 +60,16 @@ namespace SpecFlowProducts.StepDefinitions
         {
             this._productModel.Name = name;
             this._productModel.Description = description;
+
         }
 
-
         [When(@"I save the changes")]
-        public async void WhenISaveTheChanges()
+        public async Task WhenISaveTheChangesAsync()
         {
-            string requestBody = JsonConvert.SerializeObject(this._productModel);
+            string requestBody = JsonConvert.SerializeObject(_productModel);
             // set up Http Request Message
             // ATENCIÓN: Se deberá de modificar el puerto que está en la línea debajo
-            var request = new HttpRequestMessage(HttpMethod.Put, $"https://localhost:7186/api/Product?id={productId}")
+            var request = new HttpRequestMessage(HttpMethod.Put, $"https://localhost:7186/api/Product/{productId}")
             {
                 Content = new StringContent(requestBody)
                 {
@@ -81,7 +80,7 @@ namespace SpecFlowProducts.StepDefinitions
                 }
             };
 
-            string authToken = "e9e0e1e9-3812-4eb5-949e-ae92ac931401";
+            string authToken = "6894f240-7775-4a03-a309-612c9e208ba3";
             request.Headers.Authorization = new AuthenticationHeaderValue(authToken);
 
             // create an http client
@@ -91,9 +90,9 @@ namespace SpecFlowProducts.StepDefinitions
             try
             {
                 context.Set(response.StatusCode, "ResponseStatusCode");
-                var responseContent = await response.Content.ReadAsStringAsync();
-                this.responseObject = (Product)JsonConvert.DeserializeObject<Product>(responseContent);
-                Console.WriteLine(this.responseObject);
+                _responseContent = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(_responseContent);
+                this._responseObject = (Product)JsonConvert.DeserializeObject<Product>(_responseContent);
             }
             finally
             {
@@ -101,16 +100,13 @@ namespace SpecFlowProducts.StepDefinitions
             }
         }
 
-
         [Then(@"the product should be edited correctly with code (.*)")]
         public void ThenTheProductShouldBeEditedCorrectlyWithCode(int statusCode)
         {
             Assert.AreEqual(statusCode, (int)context.Get<HttpStatusCode>("ResponseStatusCode"));
-            Assert.AreEqual(this.responseObject.Name, this._productModel.Name);
-            Assert.AreEqual(this.responseObject.Description, this._productModel.Description);
-            Assert.AreEqual(this.responseObject.Code, this._productModel.Code);
+            Assert.AreEqual(this._responseObject.Name, this._productModel.Name);
+            Assert.AreEqual(this._responseObject.Description, this._productModel.Description);
+            Assert.AreEqual(this._responseObject.Code, this._productModel.Code);
         }
-
-
     }
 }

@@ -143,7 +143,7 @@ this.ScenarioInitialize(scenarioInfo);
                         " cream for underarm care\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 15
-    testRunner.When("I save the changes", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.And("I save the changes", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 16
     testRunner.Then("the product should be edited correctly with code 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
