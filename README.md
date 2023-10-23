@@ -42,6 +42,14 @@ Drive con archivos: https://drive.google.com/drive/folders/1qN_UFLUm22r_9S9Otx9I
 - Tablero git project: https://github.com/orgs/IngSoft-ISA2-2023-2/projects/24/views/1
 - Git Actions: https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/actions
 
+#### Entrega 3
+
+- Tablero retrometro: 
+- Video retrospectiva: 
+- Registro de trabajo y esfuerzo: https://docs.google.com/spreadsheets/d/18JU0RnYcXD41XFzGEBjGcpo6jaU8Y7yjqL1nhlZlFng/edit?usp=sharing
+- Tablero git project: https://github.com/orgs/IngSoft-ISA2-2023-2/projects/43
+- Git Actions: https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/actions
+
 ### Issues
 
 ##### Entrega 1
@@ -59,6 +67,14 @@ Drive con archivos: https://drive.google.com/drive/folders/1qN_UFLUm22r_9S9Otx9I
   - Review: https://fi365-my.sharepoint.com/:v:/g/personal/sm250618_fi365_ort_edu_uy/EbSSUQomQKlIky2cvTLZux8BDJq62j2gaOi3hvagHG0VGg
 - Issue 6: https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/issues/8
   - Review: https://fi365-my.sharepoint.com/:v:/g/personal/rp253445_fi365_ort_edu_uy/ERiI8mop5TJHky0YUhIVOoUBcq4BJqjI5TJZ414G1e0iVw
+
+##### Entrega 3
+
+![image](https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/assets/89783678/f31549eb-222c-45ac-a48c-9de10bec5afa)
+![image](https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/assets/89783678/22615d81-6c50-4078-8937-bbb99e2d762d)
+
+- Inicial: https://fi365-my.sharepoint.com/:v:/g/personal/sm250618_fi365_ort_edu_uy/Eco-HmccNUBGl_lmHwf2qCoBhV_lh7DSt8v95DHwPjAdrg?e=SfvkNd
+- Correctivo: https://fi365-my.sharepoint.com/:v:/g/personal/sm250618_fi365_ort_edu_uy/EZrrmExVKQ1LtmQdEquBi80B0Q680qPsvaMv_dEW2QeMzw
 
 ## Informe Final
 
