@@ -1,19 +1,16 @@
-using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using PharmaGo.DataAccess.Repositories;
 using PharmaGo.DataAccess;
+using PharmaGo.DataAccess.Repositories;
 using PharmaGo.Domain.Entities;
 using PharmaGo.WebApi.Models.In;
 using System;
 using System.Net;
 using System.Net.Http.Headers;
 using TechTalk.SpecFlow;
-using Microsoft.EntityFrameworkCore;
 
 namespace SpecFlowProducts.StepDefinitions
 {
-
-
     [Binding]
     public class ProductDeletionStepDefinitions
     {
@@ -37,7 +34,7 @@ namespace SpecFlowProducts.StepDefinitions
             DbContextOptions<PharmacyGoDbContext> _options = new DbContextOptionsBuilder<PharmacyGoDbContext>().UseSqlServer("Server=.\\SQLEXPRESS;Database=PharmaGoDb;Trusted_Connection=True; MultipleActiveResultSets=True").Options;
             PharmacyGoDbContext dbContext = new PharmacyGoDbContext(_options);
             _productRepository = new ProductRepository(dbContext);
-            _prod = new Product() { Id = id, Code = "12345", Name = "Shampoo", Description = "pelo lacio", Deleted = false, Price = 80};
+            _prod = new Product() { Code = "12345", Name = "Shampoo", Description = "pelo lacio", Deleted = false, Price = 80 };
             _productRepository.InsertOne(_prod);
             _productRepository.Save();
         }
@@ -45,11 +42,18 @@ namespace SpecFlowProducts.StepDefinitions
         [When(@"press the delete button for that product")]
         public async void WhenPressTheDeleteButtonForThatProduct()
         {
+            string requestBody = JsonConvert.SerializeObject(_productModel);
             // set up Http Request Message
-            // ATENCI√ìN: Se deber√° de modificar el puerto que est√° en la l√≠nea debajo
-            
+            // ATENCI”N: Se deber· de modificar el puerto que est· en la lÌnea debajo
             var request = new HttpRequestMessage(HttpMethod.Delete, $"https://localhost:7186/api/Product/{_productId}")
             {
+                Content = new StringContent(requestBody)
+                {
+                    Headers =
+                        {
+                          ContentType = new MediaTypeHeaderValue("application/json")
+                        }
+                }
             };
 
             string authToken = "e9e0e1e9-3812-4eb5-949e-ae92ac931401";
@@ -57,12 +61,13 @@ namespace SpecFlowProducts.StepDefinitions
 
             // create an http client
             var client = new HttpClient();
-            // let's post
+            // let's put
             var response = await client.SendAsync(request).ConfigureAwait(false);
             try
             {
                 context.Set(response.StatusCode, "ResponseStatusCode");
                 _responseContent = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(_responseContent);
                 this.responseObject = (Boolean)JsonConvert.DeserializeObject<Boolean>(_responseContent);
             }
             finally
@@ -93,6 +98,8 @@ namespace SpecFlowProducts.StepDefinitions
         public void ThenTheProductShouldNotBeDeleted()
         {
             Assert.AreEqual(400, (int)context.Get<HttpStatusCode>("ResponseStatusCode"));
+
         }
+
     }
 }
