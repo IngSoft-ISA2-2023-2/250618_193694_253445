@@ -1,1 +1,66 @@
-<p>update-product works!</p>
+<app-user-header title="Employee" link="employee"></app-user-header>
+<div class="bg-light min-vh-100 d-flex flex-row align-items-center">
+    <c-container>
+      <c-row class="justify-content-center mt-3 mb-3">
+        <c-col lg="7" md="9" xl="6">
+          <c-card class="mx-4">
+            <c-card-body class="p-4">
+              <form cForm [formGroup]="form" class="customAlign">
+                <h3>Update Product</h3>
+                <c-input-group class="mb-3">
+                    <span cInputGroupText>
+                      <svg cIcon [cIcon]="icons.cilPencil"></svg>
+                    </span>
+                    <input
+                      formControlName="productName" 
+                      autoComplete="productName" 
+                      cFormControl 
+                      placeholder="Product name" />
+                 </c-input-group>
+                <c-input-group class="mb-3">
+                  <span cInputGroupText>
+                    <svg cIcon [cIcon]="icons.cilPencil"></svg>
+                  </span>
+                  <input
+                    formControlName="productCode" 
+                    autoComplete="productCode" 
+                    cFormControl 
+                    placeholder="Product Code" />
+                </c-input-group>
+                <c-input-group class="mb-3">
+                    <span cInputGroupText>
+                      <svg cIcon [cIcon]="icons.cilPencil"></svg>
+                    </span>
+                    <input
+                      formControlName="productDescription" 
+                      autoComplete="productDescription" 
+                      cFormControl 
+                      placeholder="Product Description" />
+                </c-input-group>
+                <c-input-group class="mb-3">
+                    <span cInputGroupText>
+                      <svg cIcon [cIcon]="icons.cilPencil"></svg>
+                    </span>
+                    <input
+                      formControlName="productPrice" 
+                      autoComplete="productPrice" 
+                      cFormControl 
+                      type="number"
+                      placeholder="Product Price" />
+                </c-input-group>
+                <div class="d-grid">
+                    <button 
+                    (click)="updateProduct()"
+                    class="customButton" 
+                    cButton 
+                    color="primary">
+                      Update Product
+                    </button>
+                  </div>
+              </form>
+            </c-card-body>
+          </c-card>
+        </c-col>
+      </c-row>
+    </c-container>
+</div>

@@ -24,16 +24,17 @@
               <td>{{ product.code }}</td>
               <td>{{ product.name }}</td>
               <td>{{ product.price | currency }}</td>
+              <td>{{ product.description }}</td>
               <td>{{ product.deleted ? "Yes" : "No" }}</td>
               <td>
                 <button
-                      *ngIf="product.deleted == false"
-                      title="Update"
-                      cButton
-                      color="primary"
-                      (click)="update(product.id)">Update
-                      <svg  cIcon [cIcon]="icons.cilSync"></svg>
-                    </button>
+                  *ngIf="product.deleted != false"
+                  title="Update"
+                  cButton
+                  color="primary"
+                  (click)="update(product.id)">Update
+                  <svg  cIcon [cIcon]="icons.cilSync"></svg>
+                </button>
               </td>
             </tr>
           </tbody>

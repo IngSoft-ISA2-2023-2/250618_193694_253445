@@ -13,7 +13,7 @@ import { Router } from "@angular/router";
 export class ListProductComponent implements OnInit {
   products: Product[] = [];
 
-    icons = { cilSync };
+  icons = { cilSync };
 
   constructor(
     private commonService: CommonService,
