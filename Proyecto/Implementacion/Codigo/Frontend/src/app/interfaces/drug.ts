@@ -39,3 +39,9 @@ export interface Drug {
       this.pharmacyName = pharmacyName;
     }
   }
+
+export function instanceOfDrug(object: any){
+  return 'id' in object && 'code' in object && 'name' in object && 'symptom' in object && 'quantity' in object
+  && 'price' in object && 'stock' in object && 'prescription' in object && 'unitMeasure' in object && "presentation" in object
+  && "pharmacy" in object;
+}

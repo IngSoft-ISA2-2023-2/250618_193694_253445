@@ -6,7 +6,7 @@ import { PurchaseService } from '../../../services/purchase.service';
 import { StorageManager } from '../../../utils/storage-manager';
 import { PurchaseRequest, PurchaseRequestDetail } from 'src/app/interfaces/purchase';
 import { CommonService } from '../../../services/CommonService';
-import { Drug } from 'src/app/interfaces/drug';
+import { Drug, instanceOfDrug } from 'src/app/interfaces/drug';
 
 @Component({
   selector: 'app-cho',
@@ -40,7 +40,7 @@ export class ChoComponent implements OnInit {
     let cart = JSON.parse(this.storageManager.getData('cart'));
     let details : PurchaseRequestDetail[] = [];
     for (const item of cart) {
-      let detail = new PurchaseRequestDetail(item.code, item.quantity, item.pharmacy.id);
+      let detail = new PurchaseRequestDetail(item.code, item.quantity, item.pharmacy.id, !instanceOfDrug(item));
       details.push(detail);
     }
 
