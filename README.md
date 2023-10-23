@@ -44,7 +44,7 @@ Drive con archivos: https://drive.google.com/drive/folders/1qN_UFLUm22r_9S9Otx9I
 
 #### Entrega 3
 
-- Tablero retrometro: 
+- Tablero retrometro: https://metroretro.io/BOYC34D61L1I
 - Video retrospectiva: 
 - Registro de trabajo y esfuerzo: https://docs.google.com/spreadsheets/d/18JU0RnYcXD41XFzGEBjGcpo6jaU8Y7yjqL1nhlZlFng/edit?usp=sharing
 - Tablero git project: https://github.com/orgs/IngSoft-ISA2-2023-2/projects/43
