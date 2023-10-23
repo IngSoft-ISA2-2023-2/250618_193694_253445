@@ -102,6 +102,12 @@ namespace PharmaGo.BusinessLogic
             return _productRepository.GetAllByExpression(p => p.Deleted == false && p.Pharmacy.Id == pharmacy.Id);
         }
 
+
+        public IEnumerable<Product> GetAll()
+        {
+            return _productRepository.GetAllByExpression(p => p.Deleted == false);
+        }
+
         public Product GetById(int id)
         {
             Product retrievedProduct = _productRepository.GetOneByExpression(p => p.Id == id);

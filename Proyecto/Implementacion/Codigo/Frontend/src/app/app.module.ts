@@ -40,6 +40,7 @@ import { ChoComponent } from './pages/home/cho/cho.component';
 
 
 import { DetailComponent } from './pages/home/detail/detail.component';
+import { ProductDetailComponent } from './pages/home/product-detail/product-detail.component';
 import { TrackingComponent } from './pages/home/tracking/tracking.component';
 import { Page404Component } from './pages/home/page404/page404.component';
 
@@ -125,6 +126,7 @@ import { CreateProductComponent } from './pages/employee/create-product/create-p
     InvitationComponent,
     StockRequestOwnerComponent,
     CreateProductComponent,
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,
