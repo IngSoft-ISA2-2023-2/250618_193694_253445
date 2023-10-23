@@ -22,7 +22,6 @@ namespace SpecFlowProducts.StepDefinitions
         private Product _responseObject;
         private string _responseContent;
         private int productId;
-
         public ProductEditionStepDefinitions(ScenarioContext context)
         {
             this.context = context;

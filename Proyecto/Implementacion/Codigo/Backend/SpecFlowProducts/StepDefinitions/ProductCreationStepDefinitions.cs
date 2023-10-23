@@ -58,7 +58,6 @@ namespace SpecFlowProducts.StepDefinitions
             _productModel.PharmacyName = pharmacyName;
         }
 
-
         [When(@"press the create button")]
         public async Task WhenPressTheCreateButtonAsync()
         {
