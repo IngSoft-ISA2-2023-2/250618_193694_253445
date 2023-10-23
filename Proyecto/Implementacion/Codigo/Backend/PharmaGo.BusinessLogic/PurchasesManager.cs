@@ -64,15 +64,28 @@ namespace PharmaGo.BusinessLogic
                 if (detail.Quantity <= 0)
                     throw new InvalidResourceException("The Quantity is a mandatory field");
 
-                string drugCode = detail.Drug.Code;
-                var drug = pharmacy.Drugs.FirstOrDefault(x => x.Code == drugCode && x.Deleted == false);
-                if (drug is null)
-                    throw new ResourceNotFoundException($"Drug {drugCode} not found in Pharmacy {pharmacy.Name}");
+                if (detail.Drug != null)
+                {
+                    string drugCode = detail.Drug.Code;
+                    var drug = pharmacy.Drugs.FirstOrDefault(x => x.Code == drugCode && x.Deleted == false);
+                    if (drug is null)
+                        throw new ResourceNotFoundException($"Drug {drugCode} not found in Pharmacy {pharmacy.Name}");
+                    total = total + (drug.Price * detail.Quantity);
+                    detail.Price = drug.Price;
+                    detail.Drug = drug;
+                }
+                else
+                {
+                    string productCode = detail.Product.Code;
+                    var product = pharmacy.Products.FirstOrDefault(x => x.Code == productCode && x.Deleted == false);
+                    if (product is null)
+                        throw new ResourceNotFoundException($"Product {productCode} not found in Pharmacy {pharmacy.Name}");
+                    total = total + (product.Price * detail.Quantity);
+                    detail.Price = product.Price;
+                    detail.Product = product;
+                }
 
                 detail.Pharmacy = pharmacy;
-                total = total + (drug.Price * detail.Quantity);
-                detail.Price = drug.Price;
-                detail.Drug = drug;
                 detail.Status = PENDING;
             }
             purchase.TotalAmount = total;

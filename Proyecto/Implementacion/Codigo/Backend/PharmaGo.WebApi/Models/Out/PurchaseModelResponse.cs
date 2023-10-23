@@ -1,4 +1,5 @@
 ﻿using PharmaGo.Domain.Entities;
+using System.Xml.Linq;
 using static PharmaGo.WebApi.Models.In.PurchaseModelRequest;
 
 namespace PharmaGo.WebApi.Models.Out
@@ -34,16 +35,28 @@ namespace PharmaGo.WebApi.Models.Out
             Details = new List<PurchaseDetailModelResponse>();
             if (purchase.details != null) {
                 foreach (var detail in purchase.details) {
-                    Details.Add(new PurchaseDetailModelResponse {
-                        Id = detail.Id,         
-                        Name = detail.Drug.Name, 
-                        Code = detail.Drug.Code, 
-                        Price = detail.Drug.Price, 
+                    PurchaseDetailModelResponse purchaseDetailModelResponse = new PurchaseDetailModelResponse()
+                    {
+                        Id = detail.Id,
                         Quantity = detail.Quantity,
                         PharmacyId = detail.Pharmacy.Id,
                         PharmacyName = detail.Pharmacy.Name,
                         Status = detail.Status
-                });
+                    };
+                    if (detail.Drug != null)
+                    {
+                        purchaseDetailModelResponse.Name = detail.Drug.Name;
+                        purchaseDetailModelResponse.Code = detail.Drug.Code;
+                        purchaseDetailModelResponse.Price = detail.Drug.Price;
+                    }
+                    else
+                    {
+                        purchaseDetailModelResponse.Name = detail.Product.Name;
+                        purchaseDetailModelResponse.Code = detail.Product.Code;
+                        purchaseDetailModelResponse.Price = detail.Product.Price;
+                    }
+
+                    Details.Add(purchaseDetailModelResponse);
                 }
             }
         }
