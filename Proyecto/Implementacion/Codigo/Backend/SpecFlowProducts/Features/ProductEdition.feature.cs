@@ -391,15 +391,15 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Modification with Incorrect Price")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Modification Leaving a Field Blank")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "ProductEdition")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("tag6")]
-        public virtual void ModificationWithIncorrectPrice()
+        public virtual void ModificationLeavingAFieldBlank()
         {
             string[] tagsOfScenario = new string[] {
                     "tag6"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Modification with Incorrect Price", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Modification Leaving a Field Blank", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 63
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -433,75 +433,16 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.And("description \"With moisturizing cream for underarm care\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 68
-    testRunner.And("price as 70.0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("price as 70.00", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 69
-    testRunner.When("I press the \"Modify\" button for that product, I should be able to modify the pric" +
-                        "e to $80", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("I press the \"Modify\" button for that product, I should be able to modify the name" +
+                        " to \"\" and the description to \"With moisturizing cream for underarm care\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 70
     testRunner.And("I save the changes", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 71
-    testRunner.Then("the product should be edited correctly with code 400", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Modification Leaving a Field Blank")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "ProductEdition")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("tag7")]
-        public virtual void ModificationLeavingAFieldBlank()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "tag7"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Modification Leaving a Field Blank", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 74
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 75
-    testRunner.Given("the product with id 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 76
-    testRunner.And("code \"12345\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 77
-    testRunner.And("name \"Antitranspirante RollOn\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 78
-    testRunner.And("description \"With moisturizing cream for underarm care\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 79
-    testRunner.And("price as 70.00", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 80
-    testRunner.When("I press the \"Modify\" button for that product, I should be able to modify the name" +
-                        " to \"\" and the description to \"With moisturizing cream for underarm care\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 81
-    testRunner.And("I save the changes", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 82
     testRunner.Then("the product should be edited correctly with code 400", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
