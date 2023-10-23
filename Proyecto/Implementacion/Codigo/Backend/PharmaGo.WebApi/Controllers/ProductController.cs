@@ -60,5 +60,13 @@ namespace PharmaGo.WebApi.Controllers
             ProductDetailModel productResponse = new ProductDetailModel(productCreated);
             return Ok(productResponse);
         }
+
+        [HttpDelete("{id}")]
+        [AuthorizationFilter(new string[] { nameof(RoleType.Employee) })]
+        public IActionResult Delete([FromRoute] int id)
+        {
+            _productManager.Delete(id);
+            return Ok(true);
+        }
     }
 }
