@@ -78,6 +78,7 @@ import { PurchaseByDateComponent } from './pages/owner/purchase-by-date/purchase
 import { InvitationComponent } from './pages/owner/invitation/invitation.component';
 import { StockRequestOwnerComponent } from './pages/owner/stock-request-owner/stock-request-owner.component';
 import { CreateProductComponent } from './pages/employee/create-product/create-product.component';
+import { DeleteProductComponent } from './pages/employee/delete-product/delete-product.component';
 
 @NgModule({
   declarations: [
@@ -119,6 +120,7 @@ import { CreateProductComponent } from './pages/employee/create-product/create-p
     InvitationComponent,
     StockRequestOwnerComponent,
     CreateProductComponent,
+    DeleteProductComponent,
   ],
   imports: [
     BrowserModule,

@@ -98,7 +98,6 @@ namespace SpecFlowProducts.StepDefinitions
             }
         }
 
-
         [Then(@"the product should be registered correctly with code (.*)")]
         public void ThenTheProductShouldBeRegisteredCorrectlyWithCode(int statusCode)
         {
