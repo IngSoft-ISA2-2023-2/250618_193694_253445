@@ -37,7 +37,7 @@ namespace PharmaGo.BusinessLogic
 
             updatedProduct.ValidOrFail();
 
-            var productSaved = _productRepository.GetOneByExpression(d => d.Id == id);
+            var productSaved = _productRepository.GetOneByExpression(p => p.Id == id);
 
             if (productSaved == null)
             {
@@ -81,7 +81,7 @@ namespace PharmaGo.BusinessLogic
                 throw new ResourceNotFoundException("The pharmacy of the drug does not exist.");
             }
 
-            if (_productRepository.Exists(d => d.Code == product.Code && d.Pharmacy.Name == pharmacyOfDrug.Name))
+            if (_productRepository.Exists(p => p.Code == product.Code && p.Pharmacy.Name == pharmacyOfDrug.Name))
             {
                 throw new InvalidResourceException("The drug already exists in that pharmacy.");
             }
@@ -99,7 +99,18 @@ namespace PharmaGo.BusinessLogic
             var userId = session.UserId;
             User user = _userRepository.GetOneDetailByExpression(u => u.Id == userId);
             Pharmacy pharmacy = user.Pharmacy;
-            return _productRepository.GetAllByExpression(d => d.Deleted == false && d.Pharmacy.Id == pharmacy.Id);
+            return _productRepository.GetAllByExpression(p => p.Deleted == false && p.Pharmacy.Id == pharmacy.Id);
+        }
+
+        public Product GetById(int id)
+        {
+            Product retrievedProduct = _productRepository.GetOneByExpression(p => p.Id == id);
+            if (retrievedProduct == null)
+            {
+                throw new ResourceNotFoundException("The product does not exist.");
+            }
+
+            return retrievedProduct;
         }
     }
 }

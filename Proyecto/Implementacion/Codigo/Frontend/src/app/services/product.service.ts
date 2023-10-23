@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
-import { Product, ProductRequest } from '../interfaces/product';
+import { Product, ProductRequest, ProductRequestUpdate } from '../interfaces/product';
 import { environment } from '../../environments/environment';
 import { CommonService } from './CommonService';
 import { StorageManager } from '../utils/storage-manager';
@@ -77,6 +77,15 @@ export class ProductService {
       );
   }
 
+  getProductById(id:number): Observable<Product> {
+    const url = `${this.url}/${id}`;
+    return this.http.get<Product>(url, {headers: this.getHttpHeaders() })
+      .pipe(
+        tap(),
+        catchError(this.handleError<Product>('Get Product By Id'))
+      );
+  }
+
   /** POST Create Product */
   createProduct(product: ProductRequest): Observable<Product> {
     return this.http.post<Product>(this.url, product, {headers: this.getHttpHeaders() })
@@ -95,6 +104,17 @@ export class ProductService {
       catchError(this.handleError<any>('Delete Product'))
     );
   }
+
+  updateProduct(id: number, product: ProductRequestUpdate): Observable<Product> {
+    const url = `${this.url}/${id}`;
+    console.log(product);
+    return this.http.put<Product>(url, product, {headers: this.getHttpHeaders() })
+    .pipe(
+      tap(),
+      catchError(this.handleError<Product>('Update Product'))
+    );
+  }
+
   /**
    * Handle Http operation that failed.
    * Let the app continue.
