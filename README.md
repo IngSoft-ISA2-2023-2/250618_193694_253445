@@ -73,6 +73,10 @@ Drive con archivos: https://drive.google.com/drive/folders/1qN_UFLUm22r_9S9Otx9I
 ![image](https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/assets/89783678/f31549eb-222c-45ac-a48c-9de10bec5afa)
 ![image](https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/assets/89783678/22615d81-6c50-4078-8937-bbb99e2d762d)
 
+### Nuevas Implementaciones
+
+##### Entrega 3
+
 - Inicial: https://fi365-my.sharepoint.com/:v:/g/personal/sm250618_fi365_ort_edu_uy/Eco-HmccNUBGl_lmHwf2qCoBhV_lh7DSt8v95DHwPjAdrg?e=SfvkNd
 - Correctivo: https://fi365-my.sharepoint.com/:v:/g/personal/sm250618_fi365_ort_edu_uy/EZrrmExVKQ1LtmQdEquBi80B0Q680qPsvaMv_dEW2QeMzw
 
