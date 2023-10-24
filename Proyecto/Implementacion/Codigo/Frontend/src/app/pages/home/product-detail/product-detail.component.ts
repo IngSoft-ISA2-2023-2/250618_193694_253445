@@ -57,6 +57,7 @@ export class ProductDetailComponent implements OnInit {
         }
       }
       if (!exist){
+        product.quantity = this.quantity;
         this.cart.push(product);
       }
       this.storageManager.saveData('cart', JSON.stringify(this.cart));

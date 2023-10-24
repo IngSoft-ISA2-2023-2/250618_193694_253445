@@ -40,6 +40,19 @@
               </c-input-group>
               <c-input-group class="mb-3">
                 <span cInputGroupText>
+                  <svg cIcon [cIcon]="icons.cilLoop1"></svg>
+                </span>
+                <input
+                  cFormControl
+                  type="number"
+                  placeholder="Quantity"
+                  value="1" 
+                  min="1" 
+                  formControlName="quantity"
+                />
+              </c-input-group>
+              <c-input-group class="mb-3">
+                <span cInputGroupText>
                   <svg cIcon [cIcon]="icons.cilDollar"></svg>
                 </span>
                 <input
