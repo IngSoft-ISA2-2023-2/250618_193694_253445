@@ -112,14 +112,10 @@ namespace SpecFlowProducts.StepDefinitions
             var response = await client.SendAsync(request).ConfigureAwait(false);
             try
             {
-                Console.WriteLine("HERE");
                 this.statusCode = (int)response.StatusCode;
-                // this.context.Set(response.StatusCode, "ResponseStatusCode");
-                // Console.WriteLine(response.StatusCode);
                 string _responseContent = await response.Content.ReadAsStringAsync();
                 Console.WriteLine(_responseContent);
                 this._responseObject = (Purchase)JsonConvert.DeserializeObject<Purchase>(_responseContent);
-                Console.WriteLine("ACA");
             }
             finally
             {
@@ -139,17 +135,20 @@ namespace SpecFlowProducts.StepDefinitions
             PurchaseDetail purchaseDetailAdded = purchasesDetailRepository.GetOneByExpression(p => p.Id == this._responseObject.Id);
             purchasesDetailRepository.DeleteOne(purchaseDetailAdded);
             purchasesDetailRepository.Save();
-
-            /*ProductRepository productRepository = new ProductRepository(dbContext);
-            Console.WriteLine(this._product);
-            Product product = productRepository.GetOneByExpression(p => p.Id == this._product.Id);
-            productRepository.DeleteOne(product);
-            productRepository.Save();
-
-            PharmacyRepository pharmacyRepository = new PharmacyRepository(dbContext);
-            pharmacyRepository.DeleteOne(this._pharmacy);
-            pharmacyRepository.Save();*/
         }
+
+        [Given(@"a negative quantity, for example (.*)")]
+        public void GivenANegativeQuantityForExample(int quantity)
+        {
+            _quantity = quantity;
+        }
+
+        [Then(@"it does not add to cart since the quantity is not valid with code (.*)")]
+        public void ThenItDoesNotAddToCartSinceTheQuantityIsNotValidWithCode(int statusCode)
+        {
+            Assert.AreEqual(statusCode, this.statusCode);
+        }
+
 
     }
 }
