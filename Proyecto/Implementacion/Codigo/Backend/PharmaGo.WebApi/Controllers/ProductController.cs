@@ -74,6 +74,7 @@ namespace PharmaGo.WebApi.Controllers
         [AuthorizationFilter(new string[] { nameof(RoleType.Employee) })]
         public IActionResult Delete([FromRoute] int id)
         {
+            string token = HttpContext.Request.Headers["Authorization"];
             _productManager.Delete(id);
             return Ok(true);
         }
