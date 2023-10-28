@@ -16,7 +16,7 @@ using Microsoft.Extensions.Configuration;
 namespace SpecFlowProducts.StepDefinitions
 {
     [Binding]
-    public class ProductCreationStepDefinitions
+    public class ProductCreationStepDefinitions  
     {
         private readonly ScenarioContext context;
         private readonly ProductModel _productModel = new ProductModel();

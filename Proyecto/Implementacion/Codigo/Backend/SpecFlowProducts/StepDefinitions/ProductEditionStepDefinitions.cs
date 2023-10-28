@@ -13,7 +13,7 @@ using System.Xml.Linq;
 using TechTalk.SpecFlow;
 
 namespace SpecFlowProducts.StepDefinitions
-{
+{ 
     [Binding]
     public class ProductEditionStepDefinitions
     {
@@ -30,7 +30,7 @@ namespace SpecFlowProducts.StepDefinitions
         [Given(@"the product with id (.*)")]
         public void GivenTheProductWithId(int id)
         {
-            this.productId = id;
+            this.productId = id; 
         }
 
         [Given(@"code ""([^""]*)""")]
