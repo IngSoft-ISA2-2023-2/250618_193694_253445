@@ -14,3 +14,10 @@ Scenario: Buy unsuccessfully, invalid quantity
 	And a negative quantity, for example -5
 	When  I select add to cart
 	Then  it does not add to cart since the quantity is not valid with code 400 
+
+@tag3
+Scenario: Buy unsuccessfully, invalid quantity 0
+	Given a product of a pharmacy
+	And a negative quantity, for example 0
+	When  I select add to cart
+	Then  it does not add to cart since the quantity is not valid with code 400 
