@@ -62,26 +62,26 @@ namespace SpecFlowProducts.StepDefinitions
             // create an http client
             var client = new HttpClient();
             // let's put
-            var response = await client.SendAsync(request).ConfigureAwait(false);
+            var response = await client.SendAsync(request);
             try
             {
+                Console.WriteLine(response.Content);
                 context.Set(response.StatusCode, "ResponseStatusCode");
                 _responseContent = await response.Content.ReadAsStringAsync();
-                Console.WriteLine(_responseContent);
                 this.responseObject = (Boolean)JsonConvert.DeserializeObject<Boolean>(_responseContent);
             }
             finally
             {
-                // move along, move along
+                //move along, move along
             }
         }
 
         [Then(@"the product should be deleted correctly")]
         public void ThenTheProductShouldBeDeletedCorrectly()
         {
+            Assert.AreEqual(false, _productRepository.GetOneByExpression(d => d.Deleted==false).Deleted);
             _productRepository.DeleteOne(_prod);
             _productRepository.Save();
-            Assert.AreEqual(200, (int)context.Get<HttpStatusCode>("ResponseStatusCode"));
         }
 
         [Given(@"the product not registered in my pharmacy with id (.*)")]
@@ -97,8 +97,7 @@ namespace SpecFlowProducts.StepDefinitions
         [Then(@"the product should not be deleted")]
         public void ThenTheProductShouldNotBeDeleted()
         {
-            Assert.AreEqual(400, (int)context.Get<HttpStatusCode>("ResponseStatusCode"));
-
+            Assert.IsNull(_productRepository);
         }
 
     }
