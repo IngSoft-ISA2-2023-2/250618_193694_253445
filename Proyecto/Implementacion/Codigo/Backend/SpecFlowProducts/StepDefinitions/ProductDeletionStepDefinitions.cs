@@ -9,8 +9,8 @@ using System.Net;
 using System.Net.Http.Headers;
 using TechTalk.SpecFlow;
 
-namespace SpecFlowProducts.StepDefinitions
-{
+namespace SpecFlowProducts.StepDefinitions 
+{ 
     [Binding]
     public class ProductDeletionStepDefinitions
     {
