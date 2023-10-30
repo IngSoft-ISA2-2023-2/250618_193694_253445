@@ -1,0 +1,3554 @@
+{
+  "id": "1c0e0c6e-03a7-481f-bf21-66f510b11546",
+  "version": "2.0",
+  "name": "Entrega 4",
+  "url": "http://localhost:4200/login",
+  "tests": [{
+    "id": "1bb8a4b4-ceeb-4e3e-8519-e52822009237",
+    "name": "Create product with correct data",
+    "commands": [{
+      "id": "d730a9a4-2d16-40f8-815f-bcd7f736d624",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6738d0ec-ba93-4861-a33a-767984420461",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "853a9507-667e-457f-aa2d-3e21deb27c6d",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "7a68f22c-24f0-4c21-a4df-f3a0d015a54f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96cf61fe-8e7d-4309-9f0c-44f6b7233a08",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-pristine:nth-child(2)",
+      "targets": [
+        ["css=.ng-pristine:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe8f4c68-6658-4ad2-970b-54f7f179f535",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-4 > .ng-valid",
+      "targets": [
+        ["css=.mb-4 > .ng-valid", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "397a5de9-1050-419e-8c21-3d63a886026e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89bc76cc-0678-41ed-a301-c1214b2a31e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2",
+      "targets": [
+        ["css=.me-2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30cc44ec-0693-49dd-884b-c1a45282cdfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/create-product')]", "xpath:href"],
+        ["xpath=//c-container[2]/div/div[3]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73d9a25a-3140-491c-b4fc-2a286094a06b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(2) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0075120a-2a66-4d5e-8c23-ecdb4bb79b5c",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "12347"
+    }, {
+      "id": "ed912667-18b9-4974-b990-283f868155a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24017fb3-98f7-4e53-9873-deecb48a6823",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Shampoo Sedal 200 ml"
+    }, {
+      "id": "99be18ad-018e-49c7-89eb-37cb0684c301",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7b7c351-01f5-4574-9b52-d7c171c92bab",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": "Dale vida a tu pelo con el nuevo shampoo Sedal"
+    }, {
+      "id": "e282e75d-00c6-4815-9970-17f8020e6045",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(5) > .ng-untouched",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//input[@type='input']", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ee4f5cb-aa0e-4425-aeb9-3def192003ef",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(5) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": "80"
+    }, {
+      "id": "cd0f07bb-9288-4ec9-b67c-056256ce3f84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9a4f1ad-b910-46dc-859d-c64f11afd483",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton",
+      "targets": [
+        ["css=.customButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcc73396-b676-404d-8c1a-b6096e72ef4a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [],
+      "value": "Product created. Success creating \"12347 - Shampoo Sedal 200 ml\""
+    }]
+  }, {
+    "id": "a1ea1717-27a8-453c-a19e-99e069221a9a",
+    "name": "Create product with wrong code length",
+    "commands": [{
+      "id": "2301d643-d1e7-4e15-8e06-5dae186c3beb",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c65cab7f-4a25-40fa-94d4-23a8f55a8653",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1a19c2f-b1e6-4a22-b907-5fe428f3a80f",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "431b466d-c9c8-4bb8-b1fc-b02d6e940bb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77b95efb-1591-467e-9671-f37f944f4e2b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "ceb68df8-2ffe-49c0-996b-a72321c9ee60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da520e02-3cc1-4c83-8838-2ef48617c6dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2",
+      "targets": [
+        ["css=.me-2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62e6572a-24be-435b-a885-e2169f14b5ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/create-product')]", "xpath:href"],
+        ["xpath=//c-container[2]/div/div[3]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c36faba2-1230-466c-a793-cb1370b605d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(2) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90d1c00a-6e49-4955-b352-b32e408c2909",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123478"
+    }, {
+      "id": "9ef71412-6558-4025-b778-bbcf436e37f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de2208fc-f8a9-4dfe-b5a6-de3d5054dd7f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Shampoo Sedal 200 ml"
+    }, {
+      "id": "9395a655-22eb-43fc-adbb-7f3ab4006e6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f25752c8-904b-49f8-9884-8559a91020fb",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": "Dale vida a tu pelo con el nuevo shampoo Sedal"
+    }, {
+      "id": "10167dd3-f447-4452-9de7-3a63ece536d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//input[@type='input']", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "150b6948-3ef3-40dc-9b43-795f27d08a43",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='input']",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//input[@type='input']", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": "80"
+    }, {
+      "id": "f4283486-bdf3-4396-b4ac-0f7ee2b973af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton",
+      "targets": [
+        ["css=.customButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "867fe64b-15a3-4108-8c02-2f0b8715a152",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [],
+      "value": "Error Create Product failed: The code must have a length of 5 digits"
+    }]
+  }, {
+    "id": "dd99e9f6-8182-4dc5-a42b-c2e030c6280a",
+    "name": "Create product with wrong code, no digits",
+    "commands": [{
+      "id": "b582e5fa-266d-44a7-83df-f9acf99c00d5",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c5d36b6-17f8-41bf-aa1b-ef00b7c1e9c6",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "32ab1082-23cf-4aa6-a919-45c11a1d4e0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2763600-69ae-4cc3-9a68-127b810dd793",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "eb77e89a-574e-4942-a590-9a34c9008bb7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd84368b-29a1-45a5-be77-0cb7d2b3ee92",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2",
+      "targets": [
+        ["css=.me-2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d894cdb-69e6-4601-b7a9-a43f1ef2b307",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/create-product')]", "xpath:href"],
+        ["xpath=//c-container[2]/div/div[3]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f0a966a-a9b3-4631-a406-ff3b2ade6799",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(2) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1babd31a-6939-44a8-8f52-cb480253ecbf",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1234A"
+    }, {
+      "id": "a2ed902d-1f48-4d48-84f0-03bc5b013ea6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ff76643-3935-4d70-b358-a956f511ade4",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Shampoo Sedal 200 ml"
+    }, {
+      "id": "e9e6e501-c014-4dee-8db4-b76d6017ddde",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8999292e-493b-4614-8800-febb6a898047",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": "Dale vida a tu pelo con el nuevo shampoo Sedal"
+    }, {
+      "id": "6abf2006-363a-4505-8730-e15dbd1b7149",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//input[@type='input']", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9d11127-37bf-4337-825d-7d53aabedacf",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='input']",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//input[@type='input']", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": "80"
+    }, {
+      "id": "22f9ed8f-809c-4ae6-9eaa-7563eae83390",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton",
+      "targets": [
+        ["css=.customButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08aa028b-31f9-4c72-bb07-2441c1d595c8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [],
+      "value": "Error Create Product failed: The code must have a length of 5 digits"
+    }]
+  }, {
+    "id": "1eb8f752-71dc-4c0c-81ed-01050974a3bd",
+    "name": "Create product with wrong name, no alphanumeric",
+    "commands": [{
+      "id": "4b9885af-4b45-4e27-a16f-8dc694715199",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a28d44eb-2a34-4e6b-9b6b-c4c02866942e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e995197-8dcb-4406-a96c-6a647f1ced5a",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "09ef19c1-a0f2-4545-9b5b-9c546be3a045",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8ba3d67-8e0d-4849-96f3-8531f047936a",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "5006c4d8-c06e-4dec-aa23-21309e059a0f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1069c6fd-2327-45b1-8ec5-8b3169f62e32",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2",
+      "targets": [
+        ["css=.me-2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20bbce41-8fe6-4268-b20a-082d19d4028f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/create-product')]", "xpath:href"],
+        ["xpath=//c-container[2]/div/div[3]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c19ad244-6a62-472f-b2dc-b53ddda073ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(2) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4932230b-0650-468e-97c8-b04dc7681a85",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "ecb6a969-6888-47fb-a8fe-8c1dee427893",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cf79434-6280-4b0a-98ca-accc4bb87c0b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Shampoo Sedal 200 ml%%$"
+    }, {
+      "id": "df6b0c29-ff02-446e-ab0c-935c73170cb4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51ec2ac7-225a-46da-9083-19325e80af9c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": "Dale vida a tu pelo con el nuevo shampoo Sedal"
+    }, {
+      "id": "51fcc619-f7ce-4710-80df-0252d0a9021c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//input[@type='input']", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6c86989-5ac4-4716-9e10-69340ed8f3b0",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='input']",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//input[@type='input']", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": "80"
+    }, {
+      "id": "d7d67994-1e11-4c69-a613-ca7b622786f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton",
+      "targets": [
+        ["css=.customButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f54b07d9-8b6d-466d-946d-9e9c97c32501",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [],
+      "value": "Error Create Product failed: The product name is incorrect, length should be lower that 30 characters and alphanumeric"
+    }]
+  }, {
+    "id": "8e6ee99f-ae25-469a-a77b-33e704bb5865",
+    "name": "Create product with wrong name, length longer than 30 characters",
+    "commands": [{
+      "id": "3ee83f5c-6029-4c0f-a602-cd82bf7255b9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d87fc47-5df5-47b9-9f7c-15ac9538d176",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "932477be-6606-40f1-9f64-3acee4ca7a1c",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "b9ae5f0f-9fdb-47d5-96e9-c4c1f3d57b77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d392d499-5908-4fc8-b654-286888945020",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "6dc5e12a-f213-4eed-bb73-60e36f375601",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a070f0c-8ed4-440c-96c8-c421b3e8af12",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2",
+      "targets": [
+        ["css=.me-2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8b21f3e-db1d-4fda-91cf-78cbf8d4f1db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/create-product')]", "xpath:href"],
+        ["xpath=//c-container[2]/div/div[3]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4277f6f-b96c-4779-90a1-5e028b025e8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(2) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "739ba252-0016-491f-803b-4d5e1dbe0198",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "0dcc0e7e-fb07-4118-aa85-07c6b78a073c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d457413-6434-4181-b5f9-3e1fb983b741",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "123456789 123456789 123456789 0"
+    }, {
+      "id": "9fa0d24a-bdce-426f-8afd-b09957dbe0fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05a164ca-a667-4ce0-b38d-713f836ede06",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": "Dale vida a tu pelo con el nuevo shampoo Sedal"
+    }, {
+      "id": "96e5b53a-5ada-4dfa-8202-081e41816e84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//input[@type='input']", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e909d41-cbf8-4ffc-a701-39c4e37a553e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='input']",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//input[@type='input']", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": "80"
+    }, {
+      "id": "12989a90-9e08-4ccb-aa90-dbf45d12ed40",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton",
+      "targets": [
+        ["css=.customButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f2315d0-411b-419a-b2f2-ace43407bf2e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [],
+      "value": "Error Create Product failed: The product name is incorrect, length should be lower that 30 characters and alphanumeric"
+    }]
+  }, {
+    "id": "48d75f76-8781-4fe5-9b3b-e5f9cc166d95",
+    "name": "Create product with wrong description, non alphanumeric",
+    "commands": [{
+      "id": "35c77388-26be-4300-b778-16e4d662aea8",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48356b35-05c6-4d15-841e-edaadc88e26c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1bf543f-a0fc-4805-9c18-2dc612c49af5",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "32ab3b97-bbd8-4764-80b3-5f07101d6fff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16b61031-736a-43a1-a948-6ea83ebcbded",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "5564c30e-d4cc-4cd8-a789-7a59dfecab03",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "507d525f-c0cd-40e8-a80d-17f0722cd3e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2",
+      "targets": [
+        ["css=.me-2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9b24b1f-77e9-4d10-b708-40c227fc407f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/create-product')]", "xpath:href"],
+        ["xpath=//c-container[2]/div/div[3]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac364ebd-34e6-4105-80c9-bbaf637708c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(2) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c2ec9d3-a2e0-4bd7-9173-ea1183b881a1",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "38e10b64-be66-405d-b34f-c191f005c7ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0c8228e-942e-4ad9-a1a9-d7a01fd8b26e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Shampoo Sedal 200 ml"
+    }, {
+      "id": "d1d65d9b-9eaa-4323-b22b-ad70b4cc0dd9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "090b9c47-ff7f-49e4-8c47-977e06df895a",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": "Dale vida a tu pelo con el nuevo shampoo Sedal &"
+    }, {
+      "id": "0a293bfb-0f0f-4c60-b016-69690079f1f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//input[@type='input']", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57a14672-30b5-4e9e-9c02-53f964aa569e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='input']",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//input[@type='input']", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": "80"
+    }, {
+      "id": "3df7926d-5836-480c-bb5a-11f9d13647e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton",
+      "targets": [
+        ["css=.customButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fc49f49-a490-4eb4-8366-001656c0080d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [],
+      "value": "Error Create Product failed: The product description is incorrect, length should be lower that 70 characters and alphanumeric"
+    }]
+  }, {
+    "id": "1e0ac82b-7d37-491c-9aff-0d7fdb3d0327",
+    "name": "Create product with wrong description, length longer than 70 characters",
+    "commands": [{
+      "id": "ea452f7d-451b-47e3-bff7-19c37fcd5929",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f68638b-73bf-4bdf-b644-fc0088cdabfd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "411b64dd-f88d-4cc4-b5bc-2ed0b854f078",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "7ced506f-7ff3-444e-9196-7ed5c9e5b788",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cd99f27-d533-46ad-a29d-75ca55fe557a",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "1928677b-8526-42ca-85aa-f0f9bdc31cef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c31775d-22e1-48b0-be29-0fae21db603b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2",
+      "targets": [
+        ["css=.me-2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a706b822-9699-4555-8721-bc5ffedf5937",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/create-product')]", "xpath:href"],
+        ["xpath=//c-container[2]/div/div[3]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9c48a06-10bd-4ecf-aecc-c3b0cd236af0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(2) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dd88f91-9623-46de-a5d0-d1afcda2ba3a",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "7c917bf7-c8a5-4270-b64a-8a640c943624",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5d9326c-5380-442f-a136-9d812e9bc5eb",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Shampoo Sedal 200 ml"
+    }, {
+      "id": "25941f17-0cad-44b3-ac4b-33880fe8d58c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a123c618-9ef6-47d6-a284-5fc6185f1804",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": "123456789 123456789 123456789 123456789 123456789 123456789 123456789 1"
+    }, {
+      "id": "35dac611-3d61-4b0f-97de-3fa7e660eb30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//input[@type='input']", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28a6ca10-d1aa-485e-8df3-f5c8fcf6a6bc",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='input']",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//input[@type='input']", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": "80"
+    }, {
+      "id": "e6928a4f-6722-4cc0-b071-26034de38116",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton",
+      "targets": [
+        ["css=.customButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e784b918-afc5-4e37-9a97-5b2b546d4543",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [],
+      "value": "Error Create Product failed: The product description is incorrect, length should be lower that 70 characters and alphanumeric"
+    }]
+  }, {
+    "id": "edd36682-f991-4d42-888d-aa730ac30d7f",
+    "name": "Delete product correctly",
+    "commands": [{
+      "id": "25c0635a-808e-44ed-a665-971e71d670b3",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33ac1745-005d-4972-9f16-127dfb0a1a19",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9987aeb-934f-419f-9d13-1629b11a1887",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "248fe119-7ce2-4658-9925-7a311e8aa2ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33ffb362-d839-4372-870a-63b08c76e53b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "474486a0-ce2b-4b8e-9c02-228e0024c280",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78b0d632-806d-4ad2-b232-6e3bdd994f24",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2",
+      "targets": [
+        ["css=.me-2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb5bc1fa-b371-47db-9548-c94a5aa50f51",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86af6c47-9295-4ebc-86c8-1b24577bd674",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4 > .col-6 .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4 > .col-6 .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/delete-product')]", "xpath:href"],
+        ["xpath=//c-container[3]/div/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64e472b0-e71f-4518-ac24-cb7f3816b3ba",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "799baf1c-ffe3-42fb-83ea-258354c31b62",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-danger",
+      "targets": [
+        ["css=.btn-outline-danger", "css:finder"],
+        ["xpath=//td[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d858c4cc-28d8-418a-98c3-aedc3cf0b57c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-\\'danger",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4875855a-d5f2-48f5-9a2c-3ae8d6eb1528",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [],
+      "value": "Product deleted. Success deleting product \"12347 - Shampoo Sedal 200 ml\""
+    }]
+  }, {
+    "id": "87fe942a-df45-44e7-b253-cce451f85bd3",
+    "name": "Correct Purchase",
+    "commands": [{
+      "id": "8c450620-9ac4-4058-940a-976c1b5a9c0a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95e6a817-4b68-49d0-bbe5-a3999001e485",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "795x673",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f295a1f-3082-4a3d-91f8-562802f34b90",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(11) .btn",
+      "targets": [
+        ["css=.mb-3:nth-child(11) .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[12]", "xpath:attributes"],
+        ["xpath=//c-card[11]/c-row/c-card-body/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23337cb4-a132-4fb8-85c0-6d23bb9ab596",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26413f56-998b-4085-8689-3f6def45f57b",
+      "comment": "",
+      "command": "type",
+      "target": "id=quantityInput",
+      "targets": [
+        ["id=quantityInput", "id"],
+        ["css=#quantityInput", "css:finder"],
+        ["xpath=//input[@id='quantityInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "fd7224c9-bea0-407e-acf5-ac280c8c3e2d",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantityInput",
+      "targets": [
+        ["id=quantityInput", "id"],
+        ["css=#quantityInput", "css:finder"],
+        ["xpath=//input[@id='quantityInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa8ee2fe-57eb-46bf-a6da-230059f823a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=quantityInput",
+      "targets": [
+        ["id=quantityInput", "id"],
+        ["css=#quantityInput", "css:finder"],
+        ["xpath=//input[@id='quantityInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "ea49574c-826b-400d-add3-1b2ece291b76",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantityInput",
+      "targets": [
+        ["id=quantityInput", "id"],
+        ["css=#quantityInput", "css:finder"],
+        ["xpath=//input[@id='quantityInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f3c02ac-2cb8-4bd9-8d3c-99aedac9a397",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=quantityInput",
+      "targets": [
+        ["id=quantityInput", "id"],
+        ["css=#quantityInput", "css:finder"],
+        ["xpath=//input[@id='quantityInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d34a9fc-b72f-4b55-b940-51515549a214",
+      "comment": "",
+      "command": "type",
+      "target": "id=quantityInput",
+      "targets": [
+        ["id=quantityInput", "id"],
+        ["css=#quantityInput", "css:finder"],
+        ["xpath=//input[@id='quantityInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "40f28dca-d0d1-47e1-911d-82a96773ba21",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantityInput",
+      "targets": [
+        ["id=quantityInput", "id"],
+        ["css=#quantityInput", "css:finder"],
+        ["xpath=//input[@id='quantityInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18804d95-48a4-458d-a1ac-5dc0ac4d9bcd",
+      "comment": "",
+      "command": "type",
+      "target": "id=quantityInput",
+      "targets": [
+        ["id=quantityInput", "id"],
+        ["css=#quantityInput", "css:finder"],
+        ["xpath=//input[@id='quantityInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "014e079a-a6cd-4935-b69d-4f5a0db74a3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantityInput",
+      "targets": [
+        ["id=quantityInput", "id"],
+        ["css=#quantityInput", "css:finder"],
+        ["xpath=//input[@id='quantityInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3d9d7e4-cd56-44a5-a0a4-1a70d97b5e50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90667b10-f6a1-4415-9df0-37fe64390324",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add another item ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "727c0487-c840-435e-a979-2760caa8d3ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) .btn",
+      "targets": [
+        ["css=.mb-3:nth-child(1) .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'View Details ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8cab54b-c644-42c5-8a31-2854084cb79c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3124fc22-6d65-4c1a-81b8-f76f256accb9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd145edb-9f50-4c0f-b8df-4afd929a34fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customCheckout",
+      "targets": [
+        ["css=.customCheckout", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Proceed to Checkout ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33176493-dae3-4d9c-9e3b-1ce9d83b5048",
+      "comment": "",
+      "command": "click",
+      "target": "id=EmailInput",
+      "targets": [
+        ["id=EmailInput", "id"],
+        ["css=#EmailInput", "css:finder"],
+        ["xpath=//input[@id='EmailInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6a79d2f-f4ed-4edb-8a56-8ead59fc5eb9",
+      "comment": "",
+      "command": "type",
+      "target": "id=EmailInput",
+      "targets": [
+        ["id=EmailInput", "id"],
+        ["css=#EmailInput", "css:finder"],
+        ["xpath=//input[@id='EmailInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "a@a.com"
+    }, {
+      "id": "61ce94e0-85a4-472d-b84e-7c4a4cb53f22",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Finish Purchase ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1250dab7-1855-4e0c-9e9c-8ed237de8816",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customToastBody",
+      "targets": [
+        ["css=.customToastBody", "css:finder"],
+        ["xpath=//c-toast-body", "xpath:position"],
+        ["xpath=//c-toast-body[contains(.,'Thank you for your purchase. Tracking code: S0LIA0YONUYJVZ23')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b6c006c-9f89-42c8-a0d7-fce0db16290d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=span > b",
+      "targets": [
+        ["css=span > b", "css:finder"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Thank you for your purchase. ')]", "xpath:innerText"]
+      ],
+      "value": "Thank you for your purchase."
+    }]
+  }, {
+    "id": "4cb0c0e0-eec7-4bb8-938a-b7bd45a69d0d",
+    "name": "Successful Modification",
+    "commands": [{
+      "id": "2010b5c0-f854-433b-9443-c0b49e5aeb1c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0239033-2f2f-4c56-b227-6a6238ca3893",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "795x673",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "164c8efd-001b-4349-92b2-f403623e440f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9e05774-8a87-43d6-88a6-b1ba45cf1cf5",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "87ab7a7d-3942-483f-8b05-1565afd24696",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51314540-c92d-46d3-9015-d6175336521d",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "4f0470de-9137-4d0a-9368-a81b46a3312d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e3a2536-f171-4d27-a3ba-df012d8e2889",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(4) .col-6:nth-child(4) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4:nth-child(4) .col-6:nth-child(4) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/list-product')]", "xpath:href"],
+        ["xpath=//c-container[2]/div/div[4]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eea1388b-747a-401b-b14d-4bccb7476a42",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfa68c41-80f5-43f9-b4f3-2ed19c2de6fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(2) > td > .btn",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(2) > td > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//tr[2]/td[6]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3ae05c3-61ba-431d-be58-85da6f2236bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(2)",
+      "targets": [
+        ["css=.mb-3:nth-child(2)", "css:finder"],
+        ["xpath=//c-input-group", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6205a2a6-1e47-4164-95fb-2578507b82d4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Antitranspirante RollOn"
+    }, {
+      "id": "9a6d5475-b808-417a-8137-72f9e3e401a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(4)",
+      "targets": [
+        ["css=.mb-3:nth-child(4)", "css:finder"],
+        ["xpath=//c-input-group[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8f21d29-8555-4a30-8cbf-83f6d73d5ce9",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@type='text'])[3]",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": "With moisturizing cream for underarm care"
+    }, {
+      "id": "ab3002b6-5b17-41b8-bd94-3a625cd0c971",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton",
+      "targets": [
+        ["css=.customButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb0b90b1-6af8-495f-835c-631d7d44d8c3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [
+        ["css=.customToastBody > span", "css:finder"],
+        ["xpath=//c-toast-body/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Product updated. Success updating product')]", "xpath:innerText"]
+      ],
+      "value": "Product updated. Success updating product"
+    }]
+  }, {
+    "id": "5515f0ef-20d9-4dc0-9107-466554bead4e",
+    "name": "Modification with Incorrect Code",
+    "commands": [{
+      "id": "a055cfa0-142d-4727-a13e-ecc346f0b94c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed17e558-e63b-4e43-a248-8626808b9208",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "795x673",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20e2d1e3-119c-4372-81e0-f9ceddcc9726",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb84e0a3-8565-424d-bea4-144c5531a27e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "fe7d5b94-9f2c-417c-bda1-aec9c5486f15",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cae9903-2f55-47ba-8aba-fe393cde2358",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "898a84de-91ef-491f-9023-748b2351f5c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53cdc13b-fc32-4cf2-afe7-1596c3eb9cc3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(4) .col-6:nth-child(4) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4:nth-child(4) .col-6:nth-child(4) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/list-product')]", "xpath:href"],
+        ["xpath=//c-container[2]/div/div[4]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2852d8ff-946e-4bcf-a1c7-b2cc40260e2b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfa2fc49-ab00-4224-bdd2-ace9617554ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(2) > td > .btn",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//td[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98399150-80e5-4af3-b9aa-fe14a37d11f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b80e2af7-1b86-4b49-b39e-faad802f761e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@type='text'])[2]",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "5fd212ba-086f-44f8-856e-45e46b69e338",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton",
+      "targets": [
+        ["css=.customButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3ba6c1c-5645-4e8e-a6d2-b5c5f0ca9f85",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2",
+      "targets": [
+        ["css=.me-2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "398193a7-adca-4a5d-a0dc-0549911a10b2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [
+        ["css=.customToastBody > span", "css:finder"],
+        ["xpath=//c-toast-body/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Product updated. Success updating product')]", "xpath:innerText"]
+      ],
+      "value": "Error Update Product failed: The code must have a length of 5 digits"
+    }]
+  }, {
+    "id": "275e68cd-a01a-45d7-a917-695548f019a6",
+    "name": "Modification with Incorrect Code (Different Product)",
+    "commands": [{
+      "id": "f41ab74c-04aa-40f8-98c8-7a535dd46b4f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ca2b8ad-343e-4449-ab65-efd1dcc04ba5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "795x673",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95a5f51b-3867-477d-baa7-09fba138be6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91015552-3ea1-4064-8a24-56d62ab6f2c3",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "3aeaa2e6-68be-4755-bf2a-70410bd725cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "135fd99d-6ccd-4b3a-95e8-a0383cd36de2",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "c9caadab-c595-4a73-a4a4-f03a56288698",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3226f1f-9845-4845-93a1-02f68be27e92",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(4) .col-6:nth-child(4) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4:nth-child(4) .col-6:nth-child(4) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/list-product')]", "xpath:href"],
+        ["xpath=//c-container[2]/div/div[4]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64131bf2-e1a6-4547-aaa3-896cf842d07b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c648e27b-22c3-4a5e-a7ae-f61262ca957b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(2) > td > .btn",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//td[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e98a10c-6e85-4c86-a74d-9e1881051806",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c44fd6c-61b3-47cf-99a4-79e37b439cac",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@type='text'])[2]",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "12347"
+    }, {
+      "id": "1aacd49d-e6cb-4dc0-a3ca-c3ae88cdcc54",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton",
+      "targets": [
+        ["css=.customButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34168b97-8c58-47f4-9bd2-348c6ec4b72f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2",
+      "targets": [
+        ["css=.me-2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2251432c-a030-4f0c-ae84-897de2124407",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [
+        ["css=.customToastBody > span", "css:finder"],
+        ["xpath=//c-toast-body/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Product updated. Success updating product')]", "xpath:innerText"]
+      ],
+      "value": "Error Update Product failed: Another product with the same code already exists in the pharmacy."
+    }]
+  }, {
+    "id": "1fae7eb9-6e3e-46d5-95d2-546d26fbfc1c",
+    "name": "Create product with correct data for modification",
+    "commands": [{
+      "id": "e47bf42c-f808-416b-b4ed-7f4155958284",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d94a4d5e-6a1a-4482-8d5a-0f33b842149f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2752098b-022e-41f0-bd2b-5fc554480dd0",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "10e44dfa-50ff-4989-b1e6-e298713e2fbe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07a5b70a-88a6-4493-bb1b-f256cf48f748",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-pristine:nth-child(2)",
+      "targets": [
+        ["css=.ng-pristine:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d3f1125-b3bf-4c3d-b600-58f7d3bae072",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-4 > .ng-valid",
+      "targets": [
+        ["css=.mb-4 > .ng-valid", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "629e5805-4330-413c-bcfe-99c6c36657c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cdb8c5f-d11c-4816-90a7-b064f1950f91",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4:nth-child(4) .col-6:nth-child(3) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/create-product')]", "xpath:href"],
+        ["xpath=//c-container[2]/div/div[3]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01b843e7-a8bc-4e7d-814f-3c393484f688",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(2) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe4a60af-dfda-45b5-b7c9-80c5b78d6597",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "12349"
+    }, {
+      "id": "2b524484-e516-49c1-9e42-174a4b5056d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ca5f55b-0339-4b31-8172-b829c2a94976",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(3) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Antiperspirant Roll"
+    }, {
+      "id": "ef08f464-18c1-4f4b-b953-5040710040b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d607d446-6105-46bf-acca-26fc9ed78d64",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(4) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": "cream for underarm care"
+    }, {
+      "id": "bffeed0e-ce30-4d05-9ea4-eb20fcb04305",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(5) > .ng-untouched",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//input[@type='input']", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27d15ed9-bda0-4495-b0f0-53c669875e0f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(5) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": "70"
+    }, {
+      "id": "aa692d88-035d-415d-9fcf-fbf454a946eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "982c03bc-4035-4e8c-a6c6-1edb548ded47",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton",
+      "targets": [
+        ["css=.customButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03a3dbf1-fae1-4b72-a487-b6e7d47d0db3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [],
+      "value": "Product created. Success creating \"12349 - Antiperspirant Roll\""
+    }]
+  }, {
+    "id": "304a362a-9dc9-4406-9f15-ae4bcf64aa6c",
+    "name": "Modification with Incorrect Name",
+    "commands": [{
+      "id": "2f03e75e-d2e9-4a28-8cc7-58870f8542ff",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "efb48f9b-e236-492b-b941-5646f0d9eeea",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "795x673",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d445adf-e3ea-4307-8c9e-5964169c831c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7eb46124-f320-4eac-b977-731b82e2b270",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "b231159c-d6ab-4698-a134-fecb3e7bc078",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bedf975-24e3-4c4a-b5a4-563730255479",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "d1a50bb7-a820-4c5b-b1d6-3b51f2d70cd1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbb0c4ce-e5d7-4485-ad3f-861c48c453e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(4) .col-6:nth-child(4) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4:nth-child(4) .col-6:nth-child(4) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/list-product')]", "xpath:href"],
+        ["xpath=//c-container[2]/div/div[4]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e45d7e5-9340-4258-8c67-7cd01caa066e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0fb63059-49d1-4dce-89aa-0452f4dedf3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(2) > td > .btn",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(2) > td > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//tr[2]/td[6]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11f5edd8-07c2-470a-9877-2674a316ccdc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(2)",
+      "targets": [
+        ["css=.mb-3:nth-child(2)", "css:finder"],
+        ["xpath=//c-input-group", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbe10710-72c7-42bb-b3f6-ef13ce6eb6df",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "The best Antitranspirante RollOn"
+    }, {
+      "id": "aad1b213-c8b9-4cfb-b541-a3b2a8dd00d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(4)",
+      "targets": [
+        ["css=.mb-3:nth-child(4)", "css:finder"],
+        ["xpath=//c-input-group[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "783f13d7-7b85-4293-833a-d0d90bc2d364",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@type='text'])[3]",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": "With moisturizing cream for underarm care"
+    }, {
+      "id": "46969566-4bae-491d-a32d-17e8a1f4c27e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton",
+      "targets": [
+        ["css=.customButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f5e16a3-3096-4f7e-ad4c-411a9758b1e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2",
+      "targets": [
+        ["css=.me-2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f816c28-4b18-47dd-8f6e-0d81c80e538e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [
+        ["css=.customToastBody > span", "css:finder"],
+        ["xpath=//c-toast-body/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Product updated. Success updating product')]", "xpath:innerText"]
+      ],
+      "value": "Error Update Product failed: The product name is incorrect, length should be lower that 30 characters and alphanumeric"
+    }]
+  }, {
+    "id": "1e211cba-fbc8-4b36-8cd2-0eb2340a17dc",
+    "name": "Modification with Incorrect Description",
+    "commands": [{
+      "id": "0bc4cc14-fac8-4743-aef1-e412fe8132e6",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f499d9c-8312-4b60-953b-00177286df62",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "795x673",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e3a5bc3-40ec-4caf-8e8a-f2df02821c79",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdacab5d-5060-4f6a-850b-aa9a3afc2710",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "ec85e2de-b9e6-43d5-a5cd-48c265533714",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f717c766-aa92-4af4-9b87-0b3f7bf34fe4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "74030146-12ad-4b48-af1b-731a1f27eccb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00777c64-a715-49cb-85b9-253e1a9e8769",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(4) .col-6:nth-child(4) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4:nth-child(4) .col-6:nth-child(4) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/list-product')]", "xpath:href"],
+        ["xpath=//c-container[2]/div/div[4]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f67d545d-24d8-4fbf-b042-ca31dddff2d5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "826b1c23-19fc-4518-ac1b-748fe5359766",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(2) > td > .btn",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(2) > td > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//tr[2]/td[6]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b154d709-1e8d-4ab1-bfe9-3f797999f4b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(2)",
+      "targets": [
+        ["css=.mb-3:nth-child(2)", "css:finder"],
+        ["xpath=//c-input-group", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd594bd4-3fff-4587-b0ed-cd9360cfba88",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Antitranspirante RollOn"
+    }, {
+      "id": "830e1548-f1d1-4a50-82c1-3d84d5ef0f5a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(4)",
+      "targets": [
+        ["css=.mb-3:nth-child(4)", "css:finder"],
+        ["xpath=//c-input-group[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74428f85-81a6-4f00-9792-204942fb33a2",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@type='text'])[3]",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//c-input-group[3]/input", "xpath:position"]
+      ],
+      "value": "Dove Original Roll On antiperspirant with moisturizing cream for underarm care"
+    }, {
+      "id": "a9e1fbdc-8280-44d1-8201-840f25e1b90b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton",
+      "targets": [
+        ["css=.customButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92484005-96e0-443e-94e7-00e3dfb4a42d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2",
+      "targets": [
+        ["css=.me-2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "128a7511-cedd-42c4-b144-c054677c42da",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [
+        ["css=.customToastBody > span", "css:finder"],
+        ["xpath=//c-toast-body/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Product updated. Success updating product')]", "xpath:innerText"]
+      ],
+      "value": "Error Update Product failed: The product description is incorrect, length should be lower that 70 characters and alphanumeric"
+    }]
+  }, {
+    "id": "5e654878-9798-4d88-a6dc-a3ad85f57de7",
+    "name": "Export Drugs",
+    "commands": [{
+      "id": "5e0bda67-cd81-490e-ac92-f14ab0907174",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3ba6d9d-b5c5-4f9a-b217-9bc0b7364720",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1265x666",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f36dca92-994b-450e-adb5-5a043d409775",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "383a1621-a80d-4ec1-811a-c87938e3c7ca",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "2aef018e-c741-4be0-acf7-c3ae263b50d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64183466-f768-40d0-aac1-8ad9af8ce403",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-pristine:nth-child(2)",
+      "targets": [
+        ["css=.ng-pristine:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d250ff41-db96-4403-9e66-379512507e70",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.mb-4 > .ng-valid", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "5af7d87f-e4bd-4a8e-b62b-7c630f26837b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef7fc6e7-a802-45f5-8488-9a1dbea9dafc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(4) .col-6:nth-child(2) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4:nth-child(4) .col-6:nth-child(2) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/export-drugs')]", "xpath:href"],
+        ["xpath=//c-container[2]/div/div[2]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be81ddd7-0de9-4c54-beef-ebf52bb0dd11",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-pristine",
+      "targets": [
+        ["css=.ng-pristine", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcf8afe1-804a-4997-8868-a548b9a763ff",
+      "comment": "",
+      "command": "select",
+      "target": "css=.form-select",
+      "targets": [
+        ["css=.form-select", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "label=JSON exporter"
+    }, {
+      "id": "003b7385-0509-47a1-a39d-6eb4d2783e00",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputName-1",
+      "targets": [
+        ["id=inputName-1", "id"],
+        ["css=#inputName-1", "css:finder"],
+        ["xpath=//input[@id='inputName-1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff2007ab-ee8f-4447-b385-8f996203be64",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputName-1",
+      "targets": [
+        ["id=inputName-1", "id"],
+        ["css=#inputName-1", "css:finder"],
+        ["xpath=//input[@id='inputName-1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ejemploMedicamento"
+    }, {
+      "id": "3212aa08-05cb-483e-9365-612578683809",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Export']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36505e00-81c9-422d-8adf-b85f0b8b86b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customToastBody",
+      "targets": [
+        ["css=.customToastBody", "css:finder"],
+        ["xpath=//c-toast-body", "xpath:position"],
+        ["xpath=//c-toast-body[contains(.,'JSON exporter Success Exporting')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d02201c-72e3-4d33-910e-a898da7671da",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=span:nth-child(1)",
+      "targets": [
+        ["css=span:nth-child(1)", "css:finder"],
+        ["xpath=//c-toast-body/span", "xpath:position"],
+        ["xpath=//span[contains(.,'JSON exporter Success Exporting')]", "xpath:innerText"]
+      ],
+      "value": "JSON exporter Success Exporting"
+    }]
+  }, {
+    "id": "1d2797df-858b-4516-8c00-1210e6ae4a4b",
+    "name": "Administrator invitation code - 2 digits",
+    "commands": [{
+      "id": "caec79f6-e6f5-47eb-becc-1ec4357d01e9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05b8cd7e-f94e-48d2-aae9-e15ff6ac78b0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1269x669",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2a8ff2f-5093-49be-a3de-5954b664cc12",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8609dc6b-a09d-4d4d-9017-e86f64c61911",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "35a26b36-1969-4328-a271-ac7ecd86b3c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34ddeb1c-1479-4fa0-9cb0-bd2850ac08f5",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "c3c88592-c5db-46fd-ba03-098a5f442579",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a96656b-5639-4568-897e-cb56409658a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-6:nth-child(2) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.col-6:nth-child(2) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/admin/list-invitation')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bedfc39-769b-4255-b4a8-2da7d01081be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(7) .btn",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(7) .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//td[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20349e12-a8c8-45e8-a379-c700d2b1b98e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,64)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76304b8d-8b72-4501-b8a7-94d4c113b4e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(5) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(5) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4026d90-19ef-4298-b471-69cb4e78e332",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(5) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(5) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9489aab8-0f74-4eb3-a2ec-ea53782a0e41",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@type='text'])[2]",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "d5aa73a0-0edc-4cc9-a641-27938c42bdb0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton",
+      "targets": [
+        ["css=.customButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Invitation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fe9c5c9-e652-4ba6-8efe-4f44efebdd47",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2",
+      "targets": [
+        ["css=.me-2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "278dbcd0-b21d-49d5-9169-b25a998f85f3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [],
+      "value": "Error Update Invitation failed: Invalid Invitation Code."
+    }]
+  }, {
+    "id": "c0839f03-7f20-4e74-82af-924921a886cc",
+    "name": "Administrator invitation code - 7 digits",
+    "commands": [{
+      "id": "9f2456cd-2534-4434-bbf2-5f1d500eee2d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "803af254-53f8-4b51-a884-dde9b362e4bc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1269x669",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba2af50d-d24b-4a1b-8adf-1616af8f5897",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33dfae26-0577-431b-9461-84d5b60d8c70",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "55db32db-3327-4671-b5a6-5fb09a0d0577",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b298dda8-c6c1-43bd-97a6-e32c160a4f93",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "6b89f00a-f638-4864-a855-cdcfed5838b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dec053ed-a4cf-4544-abb6-f606857d015d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-6:nth-child(2) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.col-6:nth-child(2) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/admin/list-invitation')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cfc75eb-78f9-4ff7-8dd4-0170deec4f31",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(7) .btn",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(7) .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//td[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a37940e7-aebd-4a1b-ba1b-890f4b9014b0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,64)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c7f3cd4-1ea9-4374-8e8d-337a39be967e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(5) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(5) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fce65918-6a2a-4a30-92ad-c4e2f57d0201",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(5) > .ng-untouched",
+      "targets": [
+        ["css=.mb-3:nth-child(5) > .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3738c064-8e4a-4004-b657-26b1d38da7e7",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@type='text'])[2]",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//c-input-group[4]/input", "xpath:position"]
+      ],
+      "value": "5992677"
+    }, {
+      "id": "3828fa7c-a89e-46ff-9bd6-3d3d9beb2ab0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton",
+      "targets": [
+        ["css=.customButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Invitation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d592466a-282b-4ce4-8b6d-dea7a7e8c36c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2",
+      "targets": [
+        ["css=.me-2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07cca21f-14ad-4cc8-a540-b07b22014a76",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.customToastBody > span",
+      "targets": [],
+      "value": "Error Update Invitation failed: Invalid Invitation Code."
+    }]
+  }, {
+    "id": "3b3d79c1-3993-4759-ac97-8b6c73e39a49",
+    "name": "Reject purchase",
+    "commands": [{
+      "id": "caa8714e-24ff-4bc6-9df9-a7b1414cac71",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a907b26-f692-4f82-9043-f0565967d3f6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1271x670",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a970f0f-ae2a-44ef-815d-434d2d6fb67a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3 > .ng-untouched",
+      "targets": [
+        ["css=.mb-3 > .ng-untouched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fd975f7-85ee-430c-8b77-21b23f7e34f3",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-dirty", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee1"
+    }, {
+      "id": "57fdce99-1ff2-4e8b-bb3c-72f2d5efea0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2)",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3b62425-0ac5-4658-a913-5ac369f94456",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//c-input-group[2]/input", "xpath:position"]
+      ],
+      "value": "Aqwertyu2."
+    }, {
+      "id": "bf5da2d3-6a3c-4c84-9774-58b729231f0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3fe302d-54eb-4023-a9b0-7f267a33c6ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.me-2",
+      "targets": [
+        ["css=.me-2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38402e2a-6d0c-42ff-bf73-a8898f72f5f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(2) .col-6:nth-child(4) .card-footer > .font-weight-bold",
+      "targets": [
+        ["css=.mt-4:nth-child(2) .col-6:nth-child(4) .card-footer > .font-weight-bold", "css:finder"],
+        ["xpath=//a[contains(@href, '/employee/purchase-status')]", "xpath:href"],
+        ["xpath=//div[4]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "544c62f5-f10b-4085-81fb-fcd3975a9cfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(8) td:nth-child(8) > .btn",
+      "targets": [
+        ["css=.mb-3:nth-child(8) td:nth-child(8) > .btn", "css:finder"],
+        ["xpath=//td[8]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ac9f833-5a3b-49d5-a3a2-7fe3fd0d10a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Yes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "96456371-47b6-4b26-a06f-b5cd8b178d76",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(8) td:nth-child(8) > .btn",
+      "targets": [
+        ["css=.mb-3:nth-child(8) td:nth-child(8) > .btn", "css:finder"],
+        ["xpath=//td[8]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "193ce8d2-77c6-41be-bc54-f07a2788e780",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Yes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "070c56a4-a47b-4631-bb1e-b6a5d11ae855",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=span > b",
+      "targets": [
+        ["css=span > b", "css:finder"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Error ')]", "xpath:innerText"]
+      ],
+      "value": "Error "
+    }]
+  }],
+  "suites": [{
+    "id": "ad222007-0eef-4b4b-9848-647426f54806",
+    "name": "User Story 1: Alta Producto",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1bb8a4b4-ceeb-4e3e-8519-e52822009237", "a1ea1717-27a8-453c-a19e-99e069221a9a", "dd99e9f6-8182-4dc5-a42b-c2e030c6280a", "1eb8f752-71dc-4c0c-81ed-01050974a3bd", "8e6ee99f-ae25-469a-a77b-33e704bb5865", "48d75f76-8781-4fe5-9b3b-e5f9cc166d95", "1e0ac82b-7d37-491c-9aff-0d7fdb3d0327"]
+  }, {
+    "id": "b0a0ff49-989e-4590-8325-95b530c4dd81",
+    "name": "User Story 2: Baja Producto",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["edd36682-f991-4d42-888d-aa730ac30d7f"]
+  }, {
+    "id": "b12e523f-1aa6-4893-bbad-e9486402f21e",
+    "name": "User Story 3: Modificación de producto",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1fae7eb9-6e3e-46d5-95d2-546d26fbfc1c", "4cb0c0e0-eec7-4bb8-938a-b7bd45a69d0d", "5515f0ef-20d9-4dc0-9107-466554bead4e", "275e68cd-a01a-45d7-a917-695548f019a6", "304a362a-9dc9-4406-9f15-ae4bcf64aa6c", "1e211cba-fbc8-4b36-8cd2-0eb2340a17dc"]
+  }, {
+    "id": "7bb29f07-9db7-4f5c-82b0-09c456d7c66f",
+    "name": "User Story 4: Compra Producto",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["87fe942a-df45-44e7-b253-cce451f85bd3"]
+  }, {
+    "id": "c88bae22-d779-4fff-9391-d465896052b2",
+    "name": "Bug 4: Exportación de medicamentos",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5e654878-9798-4d88-a6dc-a3ad85f57de7"]
+  }, {
+    "id": "5a25499b-1271-41ac-a686-aa0ec3fdc6a1",
+    "name": "Bug 6: Código de invitaciones Administrador",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1d2797df-858b-4516-8c00-1210e6ae4a4b", "c0839f03-7f20-4e74-82af-924921a886cc"]
+  }, {
+    "id": "c6ad98ab-2c11-4c6f-84cf-a4510c9b381e",
+    "name": "Bug 3: Rechazo Compras",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3b3d79c1-3993-4759-ac97-8b6c73e39a49"]
+  }],
+  "urls": ["http://localhost:4200/", "http://localhost:4200/login", "http://localhost:4200/home"],
+  "plugins": []
+}
