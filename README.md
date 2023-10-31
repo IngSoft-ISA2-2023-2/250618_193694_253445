@@ -60,11 +60,11 @@ Drive con archivos: https://drive.google.com/drive/folders/1qN_UFLUm22r_9S9Otx9I
 
 ### Issues
 
-##### Entrega 1
+#### Entrega 1
 
 <img width="472" alt="image" src="https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/assets/89783678/c3167e17-7da5-49d6-b695-0fca480ed6c2">
 
-##### Entrega 2
+#### Entrega 2
 
 ![image](https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/assets/89783678/f31549eb-222c-45ac-a48c-9de10bec5afa)
 ![image](https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/assets/89783678/22615d81-6c50-4078-8937-bbb99e2d762d)
@@ -76,20 +76,20 @@ Drive con archivos: https://drive.google.com/drive/folders/1qN_UFLUm22r_9S9Otx9I
 - Issue 6: https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/issues/8
   - Review: https://fi365-my.sharepoint.com/:v:/g/personal/rp253445_fi365_ort_edu_uy/ERiI8mop5TJHky0YUhIVOoUBcq4BJqjI5TJZ414G1e0iVw
 
+#### Entrega 3
+
+![image](https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/assets/89783678/f31549eb-222c-45ac-a48c-9de10bec5afa)
+![image](https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/assets/89783678/22615d81-6c50-4078-8937-bbb99e2d762d)
+
 #### Selenium (Entrega 4)
 
 - Aprobar compra con producto eliminado: https://www.loom.com/share/6a482860c211455ea064298d91897992?sid=62480af3-e8c6-481f-b1f1-18a68bd7af7b
 - Exportar medicamento: https://www.loom.com/share/91debc7602a647bf89b51428c3c36d8d?sid=d21c22e9-ad13-42d6-b116-4926eaac0ddf
 - Modificar codigo de invitación: https://www.loom.com/share/ae64c8824c6249069f12656117c22ce4?sid=8b8411ed-eeee-4394-b062-45cbc3de09d3
 
-##### Entrega 3
-
-![image](https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/assets/89783678/f31549eb-222c-45ac-a48c-9de10bec5afa)
-![image](https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/assets/89783678/22615d81-6c50-4078-8937-bbb99e2d762d)
-
 ### Nuevas Implementaciones
 
-##### Entrega 3
+#### Entrega 3
 
 - Inicial: https://fi365-my.sharepoint.com/:v:/g/personal/sm250618_fi365_ort_edu_uy/Eco-HmccNUBGl_lmHwf2qCoBhV_lh7DSt8v95DHwPjAdrg?e=SfvkNd
 - Correctivo: https://fi365-my.sharepoint.com/:v:/g/personal/sm250618_fi365_ort_edu_uy/EZrrmExVKQ1LtmQdEquBi80B0Q680qPsvaMv_dEW2QeMzw
