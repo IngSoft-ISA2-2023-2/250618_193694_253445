@@ -58,6 +58,10 @@ Drive con archivos: https://drive.google.com/drive/folders/1qN_UFLUm22r_9S9Otx9I
 - Tablero git project: https://github.com/orgs/IngSoft-ISA2-2023-2/projects/54
 - Git Actions: https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/actions
 
+
+#### Entrega 5
+- Tablero git project: https://github.com/orgs/IngSoft-ISA2-2023-2/projects/74
+
 ### Issues
 
 #### Entrega 1
@@ -112,3 +116,5 @@ Donde encontrarlo: https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/b
 ## Informe Final
 
 Al final del proyecto, se presentará un informe académico que documentará todas las actividades realizadas, lecciones aprendidas y conclusiones obtenidas a lo largo del proyecto.
+
+Link al informe final: https://github.com/IngSoft-ISA2-2023-2/250618_193694_253445/blob/main/Documentaci%C3%B3n/ISA2%20Obligatorio%20-%20Informe%20final.pdf
